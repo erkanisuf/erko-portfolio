@@ -50,6 +50,9 @@ $pinkViolet: rgb(255, 100, 203);
         }
       }
     }
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   .lightWrapper {
@@ -62,6 +65,15 @@ $pinkViolet: rgb(255, 100, 203);
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    .mobilHeaderSVG {
+      display: none;
+      @media (max-width: 1024px) {
+        display: flex;
+        align-self: flex-end;
+        width: 80%;
+        margin-right: -30px;
+      }
+    }
     div {
       margin-top: 200px;
       width: 50%;
@@ -104,7 +116,26 @@ $pinkViolet: rgb(255, 100, 203);
       border: none;
     }
 
-    @media (max-width: 1600px) {
+    @media (max-width: 1024px) {
+      div {
+        width: 80%;
+        margin-top: 100px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 11vw;
+        width: 100%;
+      }
+      h2 {
+        font-size: 5vw;
+        width: 100%;
+      }
+      button {
+        border-radius: 167px;
+        margin: 0 auto;
+        width: 60%;
+        font-size: 2vw;
+      }
     }
   }
 }
@@ -144,5 +175,8 @@ $pinkViolet: rgb(255, 100, 203);
         cursor: pointer;
       }
     }
+  }
+  @media (max-width: 1024px) {
+    display: none;
   }
 }

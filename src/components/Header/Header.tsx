@@ -3,6 +3,7 @@ import HeaderSVG from "../SVG/HeaderSVG";
 import HeaderCSS from "./Header.module.css";
 import { AiFillFilePdf, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
+import MobileHeaderSVG from "../SVG/MobileHeaderSVG";
 const Header = () => {
   return (
     <div className={HeaderCSS.mainContainer}>
@@ -22,6 +23,9 @@ const Header = () => {
             <h1>Erkan Isuf</h1>
             <h2>Front end developer</h2>
             <button>LET`S TALK!</button>
+          </div>
+          <div className={HeaderCSS.mobilHeaderSVG}>
+            <MobileHeaderSVG />
           </div>
         </div>
       </div>
