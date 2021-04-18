@@ -39,7 +39,7 @@ $pinkViolet: rgb(255, 100, 203);
         width: 30%;
         display: flex;
 
-        color: white;
+        color: rgb(194, 192, 192);
         justify-content: space-between;
         text-decoration: none;
         list-style: none;
@@ -47,6 +47,10 @@ $pinkViolet: rgb(255, 100, 203);
           cursor: pointer;
           font-size: 14px;
           font-family: "Open Sans", sans-serif;
+          transition: 0.3s;
+          &:hover {
+            color: white;
+          }
         }
       }
     }
@@ -83,15 +87,16 @@ $pinkViolet: rgb(255, 100, 203);
       flex-direction: column;
     }
     h1 {
-      font-size: 90px;
+      font-size: 5vw;
       margin: 0;
+
       margin-bottom: -20px;
       color: white;
       font-family: "Open Sans", sans-serif;
       font-weight: 700;
     }
     h2 {
-      font-size: 40px;
+      font-size: 2vw;
       font-weight: normal;
       margin: 15px 0;
       font-weight: 400;
@@ -105,15 +110,19 @@ $pinkViolet: rgb(255, 100, 203);
       font-size: 15px;
       margin-top: 15px;
       color: $darkViolet;
-
+      outline: none;
       color: white;
       cursor: pointer;
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
       background-color: $pinkViolet;
-      width: 28%;
+      width: 40%;
       padding: 15px 0px;
       border: none;
+      transition: 0.1s;
+      &:hover {
+        background-color: #e83e8c;
+      }
     }
 
     @media (max-width: 1024px) {
@@ -145,38 +154,62 @@ $pinkViolet: rgb(255, 100, 203);
 
   display: flex;
   flex-direction: column;
+
   justify-content: flex-end;
   height: 89vh;
+  //trigger just empty div to check useView when to trigger animation
+  .triggerSocialAnime {
+    flex: 0;
+  }
+  //container for the socials
   div {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
+    height: 10%;
 
+    align-self: flex-start;
+    justify-self: flex-start;
+    align-items: flex-start;
+    position: relative;
+    //This one is the inside with the spans that makes animation when scroll
     div {
       display: flex;
       justify-content: space-evenly;
-
-      //   position: fixed;
-      //   right: 0;
-      //   top: 50%;
-      //   flex-direction: column;
+      position: fixed;
+      top: 0;
       width: 50px;
       margin-top: 20px;
+      z-index: 9999;
       span {
         background-color: $darkViolet;
         color: white;
         padding: 6px 8px;
         padding-top: 8px;
         border-radius: 100%;
-        margin: 0 auto;
+        margin: 5px;
         cursor: pointer;
+        transition: 1s;
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
   @media (max-width: 1024px) {
     display: none;
+  }
+}
+
+.notinView {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9999;
+  span {
+    margin: 5px auto !important;
   }
 }

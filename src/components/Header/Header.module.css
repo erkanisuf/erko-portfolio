@@ -68,7 +68,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: #c2c0c0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -80,6 +80,12 @@
   cursor: pointer;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.leftWrapper header nav ul li:hover {
+  color: white;
 }
 
 @media (max-width: 1024px) {
@@ -144,7 +150,7 @@
 }
 
 .leftWrapper .lightWrapper h1 {
-  font-size: 90px;
+  font-size: 5vw;
   margin: 0;
   margin-bottom: -20px;
   color: white;
@@ -153,7 +159,7 @@
 }
 
 .leftWrapper .lightWrapper h2 {
-  font-size: 40px;
+  font-size: 2vw;
   font-weight: normal;
   margin: 15px 0;
   font-weight: 400;
@@ -168,14 +174,21 @@
   font-size: 15px;
   margin-top: 15px;
   color: #221e41;
+  outline: none;
   color: white;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   background-color: #ff64cb;
-  width: 28%;
+  width: 40%;
   padding: 15px 0px;
   border: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.leftWrapper .lightWrapper button:hover {
+  background-color: #e83e8c;
 }
 
 @media (max-width: 1024px) {
@@ -217,6 +230,12 @@
   height: 89vh;
 }
 
+.rightWrapper .triggerSocialAnime {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
 .rightWrapper div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -230,8 +249,14 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
+  height: 10%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: flex-start;
+  align-items: flex-start;
+  position: relative;
 }
 
 .rightWrapper div div {
@@ -241,8 +266,11 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  position: fixed;
+  top: 0;
   width: 50px;
   margin-top: 20px;
+  z-index: 9999;
 }
 
 .rightWrapper div div span {
@@ -251,13 +279,76 @@
   padding: 6px 8px;
   padding-top: 8px;
   border-radius: 100%;
-  margin: 0 auto;
+  margin: 5px;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.rightWrapper div div span:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 1024px) {
   .rightWrapper {
     display: none;
+  }
+}
+
+.notinView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 9999;
+}
+
+.notinView span {
+  margin: 5px auto !important;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 3%;
+    top: 2%;
+    right: 5%;
+    background-color: #ff64cb;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: fixed;
+    z-index: 9999;
+  }
+  .burger div {
+    margin: 5%;
+    width: 80%;
+    height: 10%;
+    background-color: white;
   }
 }
 /*# sourceMappingURL=Header.module.css.map */

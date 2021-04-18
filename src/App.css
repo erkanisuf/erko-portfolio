@@ -1,0 +1,23 @@
+.parallax-effect {
+  @include background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 80%;
+  background-color: darkgreen;
+  color: white;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+}
+.inner-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-style: italic;
+  color: white;
+  transform: translateZ(60px);
+}

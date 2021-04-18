@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const HeaderSVG = () => {
   return (
     <svg
@@ -21,6 +21,7 @@ const HeaderSVG = () => {
         data-name="Rectangle 75"
       ></path>
       <path
+        className="topestBar"
         fill="#221e41"
         d="M309.276 0H772.917V19.697H309.276z"
         data-name="Rectangle 80"
@@ -50,17 +51,46 @@ const HeaderSVG = () => {
         fill="#f2f2f2"
         d="M584.272 61.279H656.9480000000001V185.434H584.272z"
       ></path>
-      <path fill="#221e41" d="M425.64 61.277H572.23V95.452H425.64z"></path>
-      <path fill="#f2f2f2" d="M425.64 104.969H572.23V141.74H425.64z"></path>
+      <motion.path
+        initial={{ y: 0 }}
+        animate={{ y: 45 }}
+        transition={{
+          duration: 1,
+          repeat: Infinity,
+          repeatDelay: 5,
+          repeatType: "mirror",
+        }}
+        className="firstDiv"
+        fill="#221e41"
+        d="M425.64 61.277H572.23V95.452H425.64z"
+      ></motion.path>
+      <motion.path
+        initial={{ y: 0 }}
+        animate={{ y: -45 }}
+        transition={{
+          duration: 1,
+          repeat: Infinity,
+          repeatDelay: 5,
+          repeatType: "mirror",
+        }}
+        fill="#f2f2f2"
+        d="M425.64 104.969H572.23V141.74H425.64z"
+      ></motion.path>
       <path
         fill="#f2f2f2"
         d="M425.64 151.257H572.23V185.43200000000002H425.64z"
       ></path>
-      <path
-        fill="#9f616a"
+      <motion.path
+        initial={{ translateX: -213.443, translateY: -144.598 }}
+        animate={{
+          rotate: [0, -30, 0],
+        }}
+        transition={{ loop: Infinity, delay: 0.6, duration: 4 }}
+        className="backHand"
+        fill="#e08d99"
         d="M434.646 511.7a17.867 17.867 0 00-19.79-17.863 17.202 17.202 0 00-2.348.433l-60.464-51.827 3.613-19.476-29.801-9.658-8.986 31.21a18.103 18.103 0 007.68 20.205l74.382 47.045a17.068 17.068 0 00.091 1.751 17.867 17.867 0 0021.691 15.502 17.382 17.382 0 002.105-.608 17.92 17.92 0 0011.827-16.714z"
         transform="translate(-213.443 -144.598)"
-      ></path>
+      ></motion.path>
       <path
         fill="#3f3d56"
         d="M284.325 571.807h77.958c0 2.241 80.345 4.06 80.345 4.06a20.884 20.884 0 013.426 3.247 20.152 20.152 0 014.71 12.99v3.248a20.305 20.305 0 01-20.298 20.298H284.325a20.315 20.315 0 01-20.298-20.298v-3.247a20.326 20.326 0 0120.298-20.298z"
@@ -76,7 +106,8 @@ const HeaderSVG = () => {
         transform="translate(-213.443 -144.598)"
       ></path>
       <path
-        fill="#9f616a"
+        className="backLeg"
+        fill="#e08d99"
         d="M196.707 589.916L216.613 589.914 226.084 538.282 196.703 538.284 196.707 589.916z"
       ></path>
       <path
@@ -90,7 +121,8 @@ const HeaderSVG = () => {
         transform="translate(-213.443 -144.598)"
       ></path>
       <path
-        fill="#9f616a"
+        className="frontLeg"
+        fill="#e08d99"
         d="M183.716 589.916L203.622 589.914 213.094 538.282 183.713 538.284 183.716 589.916z"
       ></path>
       <path
@@ -108,12 +140,28 @@ const HeaderSVG = () => {
         d="M350.517 526.163c1.903-1.346 29.229 12.99 34.1 1.623-22.733-56.832-7.067-81.374-20.993-113.965a40.581 40.581 0 00-26.9-23.025l-36.13-1.823-.187.09a42.227 42.227 0 00-23.089 44.798c.129 35.469 21.35 62.52 13.93 88.247a8.317 8.317 0 00.786 6.468 7.93 7.93 0 005.06 3.75l47.704-6.364a8.061 8.061 0 006.522-1.262z"
         transform="translate(-213.443 -144.598)"
       ></path>
-      <circle cx="99.209" cy="190.998" r="39.882" fill="#9f616a"></circle>
-      <path
+      <motion.circle
+        //   initial={{  }}
+        animate={{
+          rotate: [0, -30, 0],
+        }}
+        transition={{ loop: Infinity, delay: 0.1, duration: 5 }}
+        className="head"
+        cx="99.209"
+        cy="190.998"
+        r="39.882"
+        fill="#e08d99"
+      ></motion.circle>
+      <motion.path
+        initial={{ translateX: -213.443, translateY: -144.598 }}
+        animate={{
+          rotate: [0, -10, 0],
+        }}
+        transition={{ loop: Infinity, delay: 0.8, duration: 3 }}
         fill="#2f2e41"
         d="M299.948 372.203c2.12.927 6.459-15.958 4.515-19.335-2.89-5.022-2.72-4.986-4.639-8.309s-2.348-7.87.137-10.794 8.236-2.536 9.37 1.13c-.73-6.963 6.157-12.56 12.979-14.132s14.017-.596 20.876-1.996c7.96-1.624 16.243-8.297 13.067-17.051a12.33 12.33 0 00-2.405-3.953c-3.67-4.126-8.803-5.887-13.822-7.59-10.44-3.545-21.167-7.133-32.187-6.742-18.105.643-35.22 13.159-41.32 30.218a42.473 42.473 0 00-1.758 6.536c-3.783 20.337 8.027 40.397 27.208 48.141z"
         transform="translate(-213.443 -144.598)"
-      ></path>
+      ></motion.path>
       <path
         fill="#3f3d56"
         d="M509.097 436.337l4.574 27.156a1.672 1.672 0 01-.097.898l-35.88 89.654a1.672 1.672 0 01-3.222-.55l-1.52-36.028a1.672 1.672 0 01.121-.7l32.827-80.782a1.672 1.672 0 013.197.352z"
@@ -144,27 +192,40 @@ const HeaderSVG = () => {
         transform="translate(-213.443 -144.598)"
         style={{ isolation: "isolate" }}
       ></path>
-      <path
-        fill="#9f616a"
+      <motion.path
+        initial={{ translateX: -213.443, translateY: -144.598 }}
+        animate={{
+          rotate: [0, 5, 0],
+        }}
+        transition={{ loop: Infinity, delay: 0.6, duration: 3 }}
+        className="frontHand"
+        fill="#e08d99"
         d="M325.946 505.051l86.764 16.192a17.078 17.078 0 00.734 1.594 17.906 17.906 0 0011.491 8.972 17.72 17.72 0 0014.399-2.608 17.864 17.864 0 00-18.475-30.512 17.168 17.168 0 00-2.02 1.272l-75.361-25.744-3.857-19.43-31.26 2.069 3.24 32.57a17.767 17.767 0 0014.345 15.625z"
         transform="translate(-213.443 -144.598)"
-      ></path>
+      ></motion.path>
       <path
         fill="#2f2e41"
         d="M307.302 471.383l45.423-14.929-10.596-30.423a18.135 18.135 0 00-20.107-11.923 18.135 18.135 0 00-15.153 18.089z"
         transform="translate(-213.443 -144.598)"
       ></path>
 
-      <path
+      <motion.path
+        initial={{ x: -83.443, y: -180.598 }}
+        animate={{ x: -83.443, y: -150.598 }}
+        transition={{ duration: 1.5, repeatType: "mirror", repeat: Infinity }}
         fill="rgb(255, 100, 203)"
         d="M743.65 723.895c18.274 9.458 26.398 30.05 26.398 30.05s-21.503 5.257-39.776-4.2-26.399-30.049-26.399-30.049 21.503-5.258 39.777 4.2z"
         transform="translate(-83.443 -144.598)"
-      ></path>
-      <path
+      ></motion.path>
+
+      <motion.path
+        initial={{ x: -83.443, y: -180.598 }}
+        animate={{ x: -83.443, y: -150.598 }}
+        transition={{ duration: 1.5, repeatType: "mirror", repeat: Infinity }}
         fill="rgb(255, 100, 203)"
         d="M737.806 730.708c10.905 17.448 32.086 23.88 32.086 23.88s3.501-21.857-7.403-39.306-32.086-23.88-32.086-23.88-3.502 21.857 7.403 39.306z"
         transform="translate(-83.443 -144.598)"
-      ></path>
+      ></motion.path>
     </svg>
   );
 };

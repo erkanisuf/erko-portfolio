@@ -1,0 +1,44 @@
+$pinkViolet: rgb(255, 100, 203);
+.burger {
+  display: none;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 3%;
+    top: 2%;
+    right: 5%;
+    background-color: $pinkViolet;
+    align-self: flex-end;
+    position: fixed;
+    z-index: 9999;
+
+    div {
+      margin: 5%;
+      width: 80%;
+      height: 10%;
+      background-color: white;
+      &:nth-of-type(2) {
+        // transform: translateX(-25%);
+      }
+    }
+  }
+}
+
+.mobileMenu {
+  display: none;
+  @media (max-width: 1024px) {
+    display: flex;
+    opacity: 0;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+}

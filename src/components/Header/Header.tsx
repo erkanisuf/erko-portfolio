@@ -1,13 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeaderSVG from "../SVG/HeaderSVG";
 import HeaderCSS from "./Header.module.css";
 import { AiFillFilePdf, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import MobileHeaderSVG from "../SVG/MobileHeaderSVG";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
+// import Tilt from "react-parallax-tilt";
 const Header = () => {
+  const controls = useAnimation(); //framer motion
+  const { ref, inView, entry } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
+
+  //variants for the social media bar
+  const variants = {
+    active: { y: 500, x: 200 },
+    inactive: {
+      y: 0,
+      x: 0,
+    },
+  };
+  useEffect(() => {
+    if (!inView && entry !== undefined) {
+      controls.start("active");
+    } else {
+      controls.start("inactive");
+    }
+  }, [inView, entry, controls]);
+
+  // For the h1 div animation
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delay: 1.2,
+        staggerChildren: 1.5, // makes it pop 1 by 1
+      },
+    },
+  };
+  //child items
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
     <div className={HeaderCSS.mainContainer}>
-      <div className={HeaderCSS.leftWrapper}>
+      <motion.div
+        initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ x: { type: "spring", stiffness: 50 } }}
+        className={HeaderCSS.leftWrapper}
+      >
+        {/* Burger Menu component */}
+        <BurgerMenu />
+        {/* Header of Left panel, visible only desktop */}
         <header>
           <div>Logo</div>
           <nav>
@@ -18,20 +66,49 @@ const Header = () => {
             </ul>
           </nav>
         </header>
-        <div className={HeaderCSS.lightWrapper}>
-          <div>
-            <h1>Erkan Isuf</h1>
-            <h2>Front end developer</h2>
-            <button>LET`S TALK!</button>
-          </div>
+        {/* Texts in the left panel */}
+        <motion.div
+          initial={{ y: 5000, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ y: { type: "spring", stiffness: 50 } }}
+          className={HeaderCSS.lightWrapper}
+        >
+          <motion.div variants={container} initial="hidden" animate="show">
+            <motion.h1 variants={item}>Erkan Isuf</motion.h1>
+            <motion.h2 variants={item}>Front end developer</motion.h2>
+
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{ duration: 0.1 }}
+              variants={item}
+            >
+              LET`S TALK!
+            </motion.button>
+          </motion.div>
           <div className={HeaderCSS.mobilHeaderSVG}>
+            {/* This SVG is visible only for mobile*/}
             <MobileHeaderSVG />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
+      {/* Right Panel */}
       <div className={HeaderCSS.rightWrapper}>
+        {/* Empty Div that triggers on useView  ,this whole panel is invisible in mobile */}
+        <div ref={ref} className={HeaderCSS.triggerSocialAnime} />
         <div>
-          <div>
+          {/* Social Media links */}
+          <motion.div
+            className={!inView ? HeaderCSS.notinView : ""}
+            variants={variants}
+            animate={controls}
+            transition={{
+              delay: 0,
+              y: { type: "spring", stiffness: 50 },
+              x: { type: "spring", stiffness: 50 },
+            }}
+          >
             <span>
               <AiFillGithub fontSize="18px" />
             </span>
@@ -47,8 +124,9 @@ const Header = () => {
               {" "}
               <AiFillFilePdf fontSize="18px" />
             </span>
-          </div>
+          </motion.div>
         </div>
+        {/* SVG that is for desktop*/}
         <HeaderSVG />
       </div>
     </div>
