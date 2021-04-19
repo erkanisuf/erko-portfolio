@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import HeaderSVG from "../SVG/HeaderSVG";
 import HeaderCSS from "./Header.module.css";
 import { AiFillFilePdf, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { MdKeyboardArrowUp } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 import MobileHeaderSVG from "../SVG/MobileHeaderSVG";
 import { motion, useAnimation } from "framer-motion";
@@ -11,7 +12,7 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 const Header = () => {
   const controls = useAnimation(); //framer motion
   const { ref, inView, entry } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
-
+  const [active, setActive] = useState<string>("");
   //variants for the social media bar
   const variants = {
     active: { y: 500, x: 200 },
@@ -45,6 +46,17 @@ const Header = () => {
     show: { opacity: 1 },
   };
 
+  const activeLink = (e: string) => {
+    setActive(e);
+  };
+
+  //Variants for the back to up btn
+  const variantsUpArrow = {
+    active: { opacity: 1 },
+    inactive: {
+      opacity: 0,
+    },
+  };
   return (
     <div className={HeaderCSS.mainContainer}>
       <motion.div
@@ -54,23 +66,49 @@ const Header = () => {
         className={HeaderCSS.leftWrapper}
       >
         {/* Burger Menu component */}
-        <BurgerMenu />
+        <BurgerMenu active={active} activeLink={activeLink} />
+
         {/* Header of Left panel, visible only desktop */}
         <header>
           <div>Logo</div>
           <nav>
             <ul>
-              <li>My work</li>
-              <li>My skills</li>
-              <li>Contact me</li>
+              <li>
+                <a
+                  href="#a"
+                  className={active === "#a" ? HeaderCSS.active : ""}
+                  onClick={() => activeLink("#a")}
+                >
+                  {" "}
+                  My work
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#s"
+                  className={active === "#s" ? HeaderCSS.active : ""}
+                  onClick={() => activeLink("#s")}
+                >
+                  My skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#d"
+                  className={active === "#d" ? HeaderCSS.active : ""}
+                  onClick={() => activeLink("#d")}
+                >
+                  Contact me
+                </a>
+              </li>
             </ul>
           </nav>
         </header>
         {/* Texts in the left panel */}
         <motion.div
-          initial={{ y: 5000, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ y: { type: "spring", stiffness: 50 } }}
+          initial={{ x: 1000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.5 }}
           className={HeaderCSS.lightWrapper}
         >
           <motion.div variants={container} initial="hidden" animate="show">
@@ -129,6 +167,14 @@ const Header = () => {
         {/* SVG that is for desktop*/}
         <HeaderSVG />
       </div>
+      {/* Back to Fornt page arrow */}
+      <motion.div
+        whileHover={{ scale: 1.3 }}
+        animate={!inView ? variantsUpArrow.active : variantsUpArrow.inactive}
+        className={HeaderCSS.showArrowUp}
+      >
+        <MdKeyboardArrowUp color="white" />
+      </motion.div>
     </div>
   );
 };

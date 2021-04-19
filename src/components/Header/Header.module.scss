@@ -4,7 +4,7 @@ $lightViolet: #6e00ff;
 $pinkViolet: rgb(255, 100, 203);
 .mainContainer {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+
   display: flex;
   height: 100%;
   align-items: flex-end;
@@ -15,7 +15,7 @@ $pinkViolet: rgb(255, 100, 203);
   border-bottom-right-radius: 167px;
 
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -39,11 +39,12 @@ $pinkViolet: rgb(255, 100, 203);
         width: 30%;
         display: flex;
 
-        color: rgb(194, 192, 192);
         justify-content: space-between;
-        text-decoration: none;
+
         list-style: none;
-        li {
+        a {
+          color: rgb(214, 213, 213);
+          text-decoration: none;
           cursor: pointer;
           font-size: 14px;
           font-family: "Open Sans", sans-serif;
@@ -58,7 +59,10 @@ $pinkViolet: rgb(255, 100, 203);
       display: none;
     }
   }
-
+  // ACtive class for navigation
+  .active {
+    color: white;
+  }
   .lightWrapper {
     background-color: $lightViolet;
     border-top-right-radius: 167px;
@@ -76,6 +80,7 @@ $pinkViolet: rgb(255, 100, 203);
         align-self: flex-end;
         width: 80%;
         margin-right: -30px;
+        height: 100%;
       }
     }
     div {
@@ -212,4 +217,23 @@ $pinkViolet: rgb(255, 100, 203);
   span {
     margin: 5px auto !important;
   }
+}
+
+.showArrowUp {
+  display: flex;
+  position: fixed;
+  background-color: $pinkViolet;
+  font-size: 3vw;
+  bottom: 5%;
+  right: 8%;
+  border-radius: 100%;
+  cursor: pointer;
+  @media (max-width: 1024px) {
+    padding: 15px;
+    bottom: 2%;
+    right: 5%;
+  }
+}
+.hideArrowUp {
+  display: none;
 }

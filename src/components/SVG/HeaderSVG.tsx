@@ -1,6 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import useWindowSize from "./useWindowSize";
 const HeaderSVG = () => {
+  const [width] = useWindowSize();
+
+  if (width < 1024) {
+    return <p>Loading..</p>;
+  }
   return (
     <svg
       style={{ transform: "scaleX(-1)", marginLeft: "-200px" }}
@@ -10,11 +16,14 @@ const HeaderSVG = () => {
       data-name="Layer 1"
       viewBox="0 0 773.114 610.804"
     >
-      <path
+      <motion.path
+        initial={{ fill: "#e6e6e6" }}
+        animate={{ fill: "#221e41" }}
+        transition={{ delay: 2, duration: 2 }}
         fill="#e6e6e6"
         d="M309.473 12.711H773.114V232.717H309.473z"
         data-name="Rectangle 62"
-      ></path>
+      ></motion.path>
       <path
         fill="#fff"
         d="M322.731 31.577H759.857V215.135H322.731z"
@@ -153,11 +162,12 @@ const HeaderSVG = () => {
         fill="#e08d99"
       ></motion.circle>
       <motion.path
-        initial={{ translateX: -213.443, translateY: -144.598 }}
+        className="hair"
+        initial={{ translateX: -220.443, translateY: -144.598 }}
         animate={{
-          rotate: [0, -10, 0],
+          rotate: [0, -20, 0],
         }}
-        transition={{ loop: Infinity, delay: 0.8, duration: 3 }}
+        transition={{ loop: Infinity, delay: 0.8, duration: 3, repeatDelay: 2 }}
         fill="#2f2e41"
         d="M299.948 372.203c2.12.927 6.459-15.958 4.515-19.335-2.89-5.022-2.72-4.986-4.639-8.309s-2.348-7.87.137-10.794 8.236-2.536 9.37 1.13c-.73-6.963 6.157-12.56 12.979-14.132s14.017-.596 20.876-1.996c7.96-1.624 16.243-8.297 13.067-17.051a12.33 12.33 0 00-2.405-3.953c-3.67-4.126-8.803-5.887-13.822-7.59-10.44-3.545-21.167-7.133-32.187-6.742-18.105.643-35.22 13.159-41.32 30.218a42.473 42.473 0 00-1.758 6.536c-3.783 20.337 8.027 40.397 27.208 48.141z"
         transform="translate(-213.443 -144.598)"

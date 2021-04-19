@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import BurgerMenuCSS from "./BurgerMenu.module.css";
-const BurgerMenu = () => {
+import BurgerMenuNav from "./BurgerMenuNav";
+
+interface IBurgerMenu {
+  active: string;
+  activeLink: any;
+}
+const BurgerMenu: React.FC<IBurgerMenu> = ({ active, activeLink }) => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   // burger menu
@@ -20,14 +26,6 @@ const BurgerMenu = () => {
     inactive: { rotateZ: 0, translateY: 0 },
   };
 
-  const variantsMobileMenu = {
-    active: {
-      opacity: 1,
-      x: 0,
-      scale: 5,
-    },
-    inactive: { opacity: 0, x: "100%", scale: 0 },
-  };
   return (
     <>
       <div className={BurgerMenuCSS.burger} onClick={() => setToggle(!toggle)}>
@@ -42,11 +40,12 @@ const BurgerMenu = () => {
           animate={toggle ? "active" : "inactive"}
         ></motion.div>
       </div>
-      <motion.div
-        animate={toggle ? "active" : "inactive"}
-        variants={variantsMobileMenu}
-        className={BurgerMenuCSS.mobileMenu}
-      ></motion.div>
+      <BurgerMenuNav
+        active={active}
+        activeLink={activeLink}
+        toggle={toggle}
+        setToggle={setToggle}
+      />
     </>
   );
 };

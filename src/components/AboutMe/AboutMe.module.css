@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+.containerAboutMe {
+  font-family: "Open Sans", sans-serif;
+  background: #f8f8fa;
+  background: linear-gradient(178deg, #f8f8fa 0%, white 80%);
+  min-height: 50vh;
+  margin: 260px auto;
+  padding: 100px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upperpanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  padding: 50px 0px;
+}
+
+.upperpanel div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.upperpanel div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px auto;
+}
+
+.upperpanel div:nth-of-type(2) .imgDiv img {
+  width: 100%;
+}
+
+.upperpanel h2 {
+  width: 100%;
+  font-size: 1.5vw;
+  font-weight: normal;
+  margin: 15px 0;
+  font-weight: 400;
+  color: #221e41;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: -25px;
+  margin-left: -25px;
+}
+
+.upperpanel h2:nth-of-type(2) {
+  color: #6e00ff;
+  font-size: 5vw;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.upperpanel p {
+  color: #665f82;
+  border-left: 1px solid #ff64cb;
+  padding-left: 55px;
+  margin-left: 55px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  width: 100%;
+  text-align: left;
+  font-size: 1vw;
+  line-height: 1.8em;
+  position: relative;
+}
+
+.upperpanel p:before {
+  content: ' "';
+  color: #221e41;
+  font-size: 6vw;
+  position: absolute;
+  top: -45px;
+  left: 40px;
+  margin-bottom: 25px;
+  -webkit-transform: rotateY(45deg) rotateX(-45deg);
+          transform: rotateY(45deg) rotateX(-45deg);
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  .upperpanel {
+    width: 75%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0px;
+  }
+  .upperpanel h2 {
+    font-size: 5vw;
+    margin-bottom: 0;
+  }
+  .upperpanel h2:nth-of-type(2) {
+    font-size: 10vw;
+  }
+  .upperpanel p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .upperpanel div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upperpanel p {
+    border: none;
+    margin: 0 auto;
+    padding: 25px 0px;
+  }
+}
+
+.bottompanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+  padding: 50px 0px;
+}
+
+.bottompanel h3 {
+  text-align: center;
+  color: #665f82;
+  font-size: 1.2vw;
+  font-weight: 700;
+  color: #665f82;
+  margin: 25px auto;
+  position: relative;
+}
+
+.bottompanel div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bottompanel .frontEnd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 25px auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.bottompanel .frontEnd div {
+  width: 100%;
+  color: #665f82;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px auto;
+  font-size: 3vw;
+}
+
+.bottompanel .frontEnd div p {
+  font-size: 1vw;
+}
+
+.bottompanel .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 25px auto;
+}
+
+.bottompanel .skills div {
+  border-right: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottompanel .skills div div {
+  width: 100%;
+  color: #665f82;
+  margin: 15px auto;
+  font-size: 3vw;
+}
+
+.bottompanel .skills div div p {
+  font-size: 1vw;
+}
+
+.bottompanel .skills div:nth-last-of-type(1) {
+  border: none;
+}
+
+.bottompanel .skills div h3 {
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: 700;
+  color: #665f82;
+}
+
+.bottompanel h2 {
+  width: 100%;
+  text-align: right;
+  font-size: 1.5vw;
+  font-weight: normal;
+  margin: 15px 0;
+  font-weight: 400;
+  color: #221e41;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0;
+  margin-left: 25px;
+}
+
+.bottompanel h2:nth-of-type(2) {
+  color: #6e00ff;
+  font-size: 5vw;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+@media (max-width: 766px) {
+  .bottompanel {
+    width: 75%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0px;
+  }
+  .bottompanel h3 {
+    font-size: 5vw;
+    margin-top: 55px;
+    margin-bottom: 0px;
+  }
+  .bottompanel .frontEnd div {
+    font-size: 10vw;
+  }
+  .bottompanel .frontEnd div p {
+    font-size: 15px;
+  }
+  .bottompanel .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 375px) {
+  .bottompanel h3 {
+    font-size: 5vw;
+  }
+  .bottompanel h2 {
+    font-size: 5vw;
+    margin-bottom: 0;
+  }
+  .bottompanel h2:nth-of-type(2) {
+    font-size: 10vw;
+  }
+  .bottompanel .frontEnd div {
+    font-size: 8vw;
+  }
+  .bottompanel .skills div div {
+    font-size: 5vw;
+  }
+}
+
+.description {
+  border: 1px solid #0004ff;
+}
+
+.mobileSkills {
+  display: none;
+}
+
+@media (max-width: 766px) {
+  .mobileSkills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobileSkills h3 {
+    font-size: 5vw;
+    margin-bottom: 25px;
+  }
+  .mobileSkills div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .mobileSkills div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 7vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #ccc;
+    color: #665f82;
+  }
+  .mobileSkills div div p {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=AboutMe.module.css.map */
