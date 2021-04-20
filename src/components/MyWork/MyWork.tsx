@@ -1,12 +1,34 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import { myProjects } from "../../MyProjects";
 import Cards from "./Cards";
 import MyWorkCSS from "./MyWork.module.css";
 const MyWork = () => {
   const items = myProjects;
-  console.log(items);
+  const { ref, inView } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
+  const variants = {
+    active: {
+      scale: 1,
+      transition: { duration: 1 },
+    },
+    inactive: {
+      scale: 0,
+    },
+  };
   return (
     <div className={MyWorkCSS.mainContainer}>
+      <motion.div
+        initial={variants.inactive}
+        variants={variants}
+        animate={inView ? "active" : "inactive"}
+        ref={ref}
+        className={MyWorkCSS.mainTitle}
+      >
+        <h2>My</h2>
+        <h2>Work</h2>
+      </motion.div>
+
       <div className={MyWorkCSS.container}>
         {items.map((el, index) => {
           return (

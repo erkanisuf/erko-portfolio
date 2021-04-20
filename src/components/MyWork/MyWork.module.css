@@ -293,7 +293,7 @@
   color: #221e41;
   display: block;
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 0;
+  margin-bottom: -25px;
   margin-left: 25px;
 }
 
@@ -413,6 +413,54 @@
   padding: 55px 0px;
 }
 
+.mainContainer .mainTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto;
+}
+
+.mainContainer .mainTitle h2 {
+  width: 90%;
+  font-size: 1.5vw;
+  font-weight: normal;
+  margin: 25px auto;
+  font-weight: 400;
+  color: #221e41;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: -25px;
+  margin-left: -25px;
+}
+
+.mainContainer .mainTitle h2:nth-of-type(2) {
+  color: #6e00ff;
+  font-size: 5vw;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer .mainTitle h2 {
+    font-size: 5vw;
+  }
+  .mainContainer .mainTitle h2:nth-of-type(2) {
+    font-size: 10vw;
+  }
+}
+
 .container {
   width: 60%;
   font-family: "Open Sans", sans-serif;
@@ -434,6 +482,7 @@
   width: 100%;
   padding: 55px;
   overflow: hidden;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +490,7 @@
 
 @media (max-width: 1024px) {
   .cardContainer {
-    padding: 0;
+    padding: 55px 0px;
     border-radius: 0px;
     margin: 50px auto;
     -webkit-box-orient: vertical;
@@ -462,28 +511,50 @@
 }
 
 .cardImageWrapper img {
-  width: 60%;
-}
-
-@media (max-width: 767px) {
-  .cardImageWrapper img {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .cardText {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cardText h1 {
   color: white;
-  font-size: 2.5vw;
+  font-size: 3vw;
+  text-shadow: 3px 3px 10px rgba(31, 38, 135, 0.37);
+  margin: 0;
 }
 
 .cardText h2 {
   color: white;
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .cardText {
+    padding: 25px 0px;
+  }
+  .cardText h1 {
+    font-size: 5vw;
+  }
+  .cardText h2 {
+    font-size: 3vw;
+  }
 }
 
 .parralax {
@@ -492,9 +563,85 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 25px;
+  padding: 55px;
+}
+
+@media (max-width: 767px) {
+  .parralax {
+    padding: 15px;
+  }
+}
+
+.stackUsed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.stackUsed div {
+  font-size: 0.8vw;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 1px 62px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 1px 62px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+@media (max-width: 1024px) {
+  .stackUsed div {
+    font-size: 2.5vw;
+  }
+}
+
+.links {
+  color: white;
+  font-size: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 50%;
+}
+
+.links svg {
+  cursor: pointer;
+  padding: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.links svg:hover {
+  background-color: #6e00ff;
+  padding: 8px;
+  border-radius: 8px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .links {
+    padding-top: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 8vw;
+    margin-top: 25px;
+  }
 }
 /*# sourceMappingURL=MyWork.module.css.map */

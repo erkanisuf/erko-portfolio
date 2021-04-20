@@ -8,7 +8,44 @@
     rgba(255, 255, 255, 1) 80%
   );
   padding: 55px 0px;
+  .mainTitle {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    h2 {
+      width: 90%;
+      font-size: 1.5vw;
+      font-weight: normal;
+      margin: 25px auto;
+      font-weight: 400;
+      color: $darkViolet;
+      display: block;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: -25px;
+      margin-left: -25px;
+
+      &:nth-of-type(2) {
+        color: $lightViolet;
+        font-size: 5vw;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+      }
+    }
+    @media (max-width: 1024px) {
+      h2 {
+        font-size: 5vw;
+        &:nth-of-type(2) {
+          font-size: 10vw;
+        }
+      }
+    }
+  }
 }
+
 .container {
   width: 60%;
   font-family: "Open Sans", sans-serif;
@@ -28,11 +65,11 @@
   width: 100%;
   padding: 55px;
   overflow: hidden;
-
+  border-radius: 10px;
   display: flex;
 
   @media (max-width: 1024px) {
-    padding: 0;
+    padding: 55px 0px;
     border-radius: 0px;
     margin: 50px auto;
     flex-direction: column;
@@ -44,31 +81,100 @@
   display: flex;
   cursor: pointer;
   img {
-    width: 60%;
+    width: 100%;
   }
-  @media (max-width: 767px) {
-    img {
-      width: 100%;
-    }
+  @media (max-width: 1024px) {
   }
 }
 
 .cardText {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
   h1 {
     color: white;
-    font-size: 2.5vw;
+    font-size: 3vw;
+    text-shadow: 3px 3px 10px rgba(31, 38, 135, 0.37);
+    margin: 0;
   }
   h2 {
     color: white;
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: 400;
+  }
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 5vw;
+    }
+    h2 {
+      font-size: 3vw;
+    }
+    padding: 25px 0px;
   }
 }
 
 .parralax {
   transform-style: preserve-3d;
   display: flex;
-  justify-content: space-between;
-  padding: 25px;
+
+  padding: 55px;
+  @media (max-width: 767px) {
+    padding: 15px;
+  }
+}
+.stackUsed {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  div {
+    font-size: 0.8vw;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 62px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  @media (max-width: 1024px) {
+    div {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+.links {
+  color: white;
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 50%;
+
+  svg {
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.5s;
+    &:hover {
+      background-color: $lightViolet;
+      padding: 8px;
+      border-radius: 8px;
+      transform: scale(1.1);
+    }
+  }
+  @media (max-width: 1024px) {
+    padding-top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    margin-top: 25px;
+  }
 }
