@@ -15,7 +15,6 @@
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;
-  border-bottom-right-radius: 167px;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -63,7 +62,7 @@
 }
 
 .leftWrapper header nav ul {
-  width: 30%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,6 +328,7 @@
   right: 8%;
   border-radius: 100%;
   cursor: pointer;
+  z-index: 99;
 }
 
 @media (max-width: 1024px) {

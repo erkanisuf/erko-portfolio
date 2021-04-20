@@ -12,7 +12,7 @@ $pinkViolet: rgb(255, 100, 203);
 .leftWrapper {
   background-color: $darkViolet;
   flex: 1.5;
-  border-bottom-right-radius: 167px;
+  // border-bottom-right-radius: 167px;
 
   width: 100%;
   height: 100vh;
@@ -36,7 +36,7 @@ $pinkViolet: rgb(255, 100, 203);
 
       flex: 1;
       ul {
-        width: 30%;
+        width: 40%;
         display: flex;
 
         justify-content: space-between;
@@ -228,6 +228,7 @@ $pinkViolet: rgb(255, 100, 203);
   right: 8%;
   border-radius: 100%;
   cursor: pointer;
+  z-index: 99;
   @media (max-width: 1024px) {
     padding: 15px;
     bottom: 2%;

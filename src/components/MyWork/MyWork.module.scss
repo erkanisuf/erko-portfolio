@@ -1,0 +1,74 @@
+@import "../AboutMe/AboutMe.module.scss";
+//This is for the greyish background
+.mainContainer {
+  background: rgb(248, 248, 250);
+  background: linear-gradient(
+    178deg,
+    rgba(248, 248, 250, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  padding: 55px 0px;
+}
+.container {
+  width: 60%;
+  font-family: "Open Sans", sans-serif;
+  margin: 55px auto;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+}
+
+.cardContainer {
+  margin: 100px auto;
+  transform-style: preserve-3d;
+
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  padding: 55px;
+  overflow: hidden;
+
+  display: flex;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+    border-radius: 0px;
+    margin: 50px auto;
+    flex-direction: column;
+  }
+}
+.cardImageWrapper {
+  transform: translateZ(60px);
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  img {
+    width: 60%;
+  }
+  @media (max-width: 767px) {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.cardText {
+  width: 100%;
+  h1 {
+    color: white;
+    font-size: 2.5vw;
+  }
+  h2 {
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 400;
+  }
+}
+
+.parralax {
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}

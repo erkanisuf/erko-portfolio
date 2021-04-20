@@ -14,6 +14,7 @@ import { GrNode } from "react-icons/gr";
 import MobileSkills from "./MobileSkills";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Tilt from "react-parallax-tilt";
 const AboutMe = () => {
   const { ref, inView } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
   const variants = {
@@ -30,7 +31,7 @@ const AboutMe = () => {
     inactive: { opacity: 0 },
   };
   return (
-    <div ref={ref} className={AboutMeCSS.containerAboutMe}>
+    <div id="aboutme" ref={ref} className={AboutMeCSS.containerAboutMe}>
       <div className={AboutMeCSS.upperpanel}>
         <motion.div
           initial={variants.inactive}
@@ -41,18 +42,20 @@ const AboutMe = () => {
           <h2>ME</h2>
         </motion.div>
         <div>
-          <motion.div whileHover={{ scale: 1.2 }} className={AboutMeCSS.imgDiv}>
-            <img
-              src="https://images0.westend61.de/0000929638pw/portrait-of-confident-young-businessman-DIGF04093.jpg"
-              alt=""
-            />
-          </motion.div>
+          <Tilt>
+            <div className={AboutMeCSS.imgDiv}>
+              <img
+                src="https://images0.westend61.de/0000929638pw/portrait-of-confident-young-businessman-DIGF04093.jpg"
+                alt=""
+              />
+            </div>
+          </Tilt>
           <motion.p
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.09 }}
             initial={pAnime.inactive}
             variants={pAnime}
             animate={inView ? "active" : "inactive"}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
           >
             I am Erko and I am a passionate front-end developer. I love to use
             new technologies to build amazing products and solve different
@@ -63,7 +66,7 @@ const AboutMe = () => {
           </motion.p>
         </div>
       </div>
-      <div className={AboutMeCSS.bottompanel}>
+      <div id="myskills" className={AboutMeCSS.bottompanel}>
         <motion.div
           initial={variants.inactive}
           variants={variants}

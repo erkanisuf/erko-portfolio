@@ -11,7 +11,7 @@ $darkViolet: #221e41;
     rgba(248, 248, 250, 1) 0%,
     rgba(255, 255, 255, 1) 80%
   );
-  min-height: 50vh;
+  min-height: 100vh;
   margin: 260px auto;
   padding: 100px 0px;
   display: flex;
@@ -114,6 +114,9 @@ $darkViolet: #221e41;
       border: none;
       margin: 0 auto;
       padding: 25px 0px;
+      &:before {
+        display: none;
+      }
     }
   }
 }

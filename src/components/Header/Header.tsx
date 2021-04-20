@@ -85,11 +85,20 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#s"
-                  className={active === "#s" ? HeaderCSS.active : ""}
+                  href="#myskills"
+                  className={active === "#myskills" ? HeaderCSS.active : ""}
                   onClick={() => activeLink("#s")}
                 >
                   My skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#aboutme"
+                  className={active === "#aboutme" ? HeaderCSS.active : ""}
+                  onClick={() => activeLink("#s")}
+                >
+                  About Me
                 </a>
               </li>
               <li>
@@ -169,6 +178,10 @@ const Header = () => {
       </div>
       {/* Back to Fornt page arrow */}
       <motion.div
+        onClick={() => {
+          window.location.href = "#";
+          activeLink("");
+        }}
         whileHover={{ scale: 1.3 }}
         animate={!inView ? variantsUpArrow.active : variantsUpArrow.inactive}
         className={HeaderCSS.showArrowUp}
