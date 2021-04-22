@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 .mainContainer {
   width: 100%;
   display: -webkit-box;
@@ -77,7 +78,7 @@
   text-decoration: none;
   cursor: pointer;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -89,6 +90,12 @@
 @media (max-width: 1024px) {
   .leftWrapper header {
     display: none;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1025px) {
+  .leftWrapper header nav ul {
+    width: 80%;
   }
 }
 
@@ -157,8 +164,8 @@
   margin: 0;
   margin-bottom: -20px;
   color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
 }
 
 .leftWrapper .lightWrapper h2 {
@@ -168,7 +175,7 @@
   font-weight: 400;
   color: white;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .leftWrapper .lightWrapper button {
@@ -180,7 +187,7 @@
   outline: none;
   color: white;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   background-color: #ff64cb;
   width: 40%;
@@ -213,6 +220,12 @@
     margin: 0 auto;
     width: 60%;
     font-size: 2vw;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1025px) {
+  .leftWrapper .lightWrapper div {
+    width: 90%;
   }
 }
 
@@ -357,5 +370,14 @@
           justify-content: center;
   margin-top: 25px;
   position: fixed;
+  height: 60px !important;
+  padding-bottom: 15px !important;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.backtoTopPop {
+  height: 20px !important;
+  padding-bottom: 25px !important;
+  font-family: "Ubuntu", sans-serif;
 }
 /*# sourceMappingURL=Header.module.css.map */

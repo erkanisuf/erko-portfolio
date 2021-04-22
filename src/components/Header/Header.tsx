@@ -110,9 +110,9 @@ const Header = () => {
           type="info"
           backgroundColor="rgb(255, 100, 203)"
           aria-haspopup="true"
-          className={HeaderCSS.popUpThemeGmail}
+          className={HeaderCSS.backtoTopPop}
         >
-          Back to Top
+          <p>Back to Top</p>
         </ReactTooltip>
       )}
     </div>

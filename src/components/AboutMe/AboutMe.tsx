@@ -15,18 +15,10 @@ import MobileSkills from "./MobileSkills";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Tilt from "react-parallax-tilt";
+import Title from "../Title/Title";
 const AboutMe = () => {
   const { ref, inView } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
-  //Animations of H2 to re animate when scroll is in view
-  const variants = {
-    active: {
-      scale: 1,
-      transition: { duration: 1 },
-    },
-    inactive: {
-      scale: 0,
-    },
-  };
+
   const pAnime = {
     active: { opacity: 1 },
     inactive: { opacity: 0 },
@@ -34,14 +26,7 @@ const AboutMe = () => {
   return (
     <div id="aboutme" ref={ref} className={AboutMeCSS.containerAboutMe}>
       <div className={AboutMeCSS.upperpanel}>
-        <motion.div
-          initial={variants.inactive}
-          variants={variants}
-          animate={inView ? "active" : "inactive"}
-        >
-          <h2>About</h2>
-          <h2>ME</h2>
-        </motion.div>
+        <Title smalltext="About" bigtext="Me" alignItems="flex-start" />
         <div>
           <Tilt>
             <div className={AboutMeCSS.imgDiv}>
@@ -67,16 +52,10 @@ const AboutMe = () => {
           </motion.p>
         </div>
       </div>
+
       <div id="myskills" className={AboutMeCSS.bottompanel}>
-        <motion.div
-          initial={variants.inactive}
-          variants={variants}
-          animate={inView ? "active" : "inactive"}
-          className={AboutMeCSS.skillsText}
-        >
-          <h2>Technical</h2>
-          <h2>SKILLS</h2>
-        </motion.div>
+        <Title smalltext="Technical" bigtext="Skills" alignItems="flex-start" />
+
         <h3>Frontend</h3>
         <div className={AboutMeCSS.frontEnd}>
           <div>

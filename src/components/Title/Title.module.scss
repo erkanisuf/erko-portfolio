@@ -1,0 +1,35 @@
+$darkViolet: #221e41;
+$lightViolet: #6e00ff;
+$pinkViolet: rgb(255, 100, 203);
+.containerTitle {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    width: 75%;
+  }
+}
+
+h2 {
+  color: $darkViolet;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+  &:nth-of-type(2) {
+    color: $lightViolet;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+  }
+  @media (max-width: 1024px) {
+    font-size: 3vw;
+    &:nth-of-type(2) {
+      font-size: 10vw;
+    }
+  }
+}

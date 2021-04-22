@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MyWorkCSS from "./MyWork.module.css";
 import DesktopImage from "./DekstopImage/DesktopImage";
 import MobileTabletImage from "./MobileTabletImage/MobileTabletImage";
 import SelectDevice from "./SelectDevice/SelectDevice";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 interface ICards {
   backgroundColor: string;
   backgroundImage: string;
@@ -26,6 +28,22 @@ const Cards: React.FC<ICards> = ({
   tabletImage,
 }) => {
   const [device, setDevice] = useState<string>("desktop");
+  const { ref, inView } = useInView({ initialInView: true, delay: 0 }); // checks if social media bar is in view or not
+  const startanimate = useAnimation();
+
+  const variants = {
+    active: { opacity: 1, x: 0 },
+    inactive: { opacity: 0, x: 200 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      startanimate.start("active");
+    } else {
+      startanimate.stop();
+    }
+    return () => {};
+  }, [inView, startanimate]);
 
   const typeOfImage = () => {
     switch (device) {
@@ -52,7 +70,12 @@ const Cards: React.FC<ICards> = ({
     }
   };
   return (
-    <div
+    <motion.div
+      ref={ref}
+      initial="inactive"
+      variants={variants}
+      animate={startanimate}
+      transition={{ duration: 1 }}
       className={MyWorkCSS.cardContainer}
       style={{
         backgroundImage: backgroundImage,
@@ -87,7 +110,7 @@ const Cards: React.FC<ICards> = ({
         setDevice={setDevice}
         device={device}
       />
-    </div>
+    </motion.div>
   );
 };
 

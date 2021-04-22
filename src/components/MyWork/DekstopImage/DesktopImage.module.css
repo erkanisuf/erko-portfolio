@@ -21,10 +21,13 @@
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .cardImageWrapper img {
   width: 100%;
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
 }
 
 .leftOrder {

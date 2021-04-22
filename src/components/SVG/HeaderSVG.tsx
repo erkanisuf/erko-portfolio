@@ -223,7 +223,7 @@ const HeaderSVG = () => {
       <motion.path
         initial={{ x: -83.443, y: -180.598 }}
         animate={{ x: -83.443, y: -150.598 }}
-        transition={{ duration: 1.5, repeatType: "mirror", repeat: Infinity }}
+        transition={{ duration: 1, repeatType: "mirror", repeat: Infinity }}
         fill="rgb(255, 100, 203)"
         d="M743.65 723.895c18.274 9.458 26.398 30.05 26.398 30.05s-21.503 5.257-39.776-4.2-26.399-30.049-26.399-30.049 21.503-5.258 39.777 4.2z"
         transform="translate(-83.443 -144.598)"
@@ -232,7 +232,7 @@ const HeaderSVG = () => {
       <motion.path
         initial={{ x: -83.443, y: -180.598 }}
         animate={{ x: -83.443, y: -150.598 }}
-        transition={{ duration: 1.5, repeatType: "mirror", repeat: Infinity }}
+        transition={{ duration: 1, repeatType: "mirror", repeat: Infinity }}
         fill="rgb(255, 100, 203)"
         d="M737.806 730.708c10.905 17.448 32.086 23.88 32.086 23.88s3.501-21.857-7.403-39.306-32.086-23.88-32.086-23.88-3.502 21.857 7.403 39.306z"
         transform="translate(-83.443 -144.598)"

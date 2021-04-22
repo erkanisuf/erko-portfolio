@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 .containerAboutMe {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
   background: #f8f8fa;
   background: linear-gradient(178deg, #f8f8fa 0%, white 80%);
   min-height: 100vh;
@@ -21,6 +22,12 @@
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .containerAboutMe {
+    margin: 100px auto;
+  }
+}
+
 .upperpanel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,6 +41,7 @@
           justify-content: space-between;
   width: 50%;
   padding: 50px 0px;
+  margin-bottom: 55px;
 }
 
 .upperpanel div {
@@ -60,27 +68,6 @@
 
 .upperpanel div:nth-of-type(2) .imgDiv img {
   width: 100%;
-}
-
-.upperpanel h2 {
-  width: 100%;
-  font-size: 1.5vw;
-  font-weight: normal;
-  margin: 15px 0;
-  font-weight: 400;
-  color: #221e41;
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: -25px;
-  margin-left: -25px;
-}
-
-.upperpanel h2:nth-of-type(2) {
-  color: #6e00ff;
-  font-size: 5vw;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
 }
 
 .upperpanel p {
@@ -119,13 +106,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 50px 0px;
-  }
-  .upperpanel h2 {
-    font-size: 5vw;
-    margin-bottom: 0;
-  }
-  .upperpanel h2:nth-of-type(2) {
-    font-size: 10vw;
   }
   .upperpanel p {
     font-size: 15px;
@@ -283,31 +263,9 @@
   color: #665f82;
 }
 
-.bottompanel h2 {
-  width: 100%;
-  text-align: right;
-  font-size: 1.5vw;
-  font-weight: normal;
-  margin: 15px 0;
-  font-weight: 400;
-  color: #221e41;
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: -25px;
-  margin-left: 25px;
-}
-
-.bottompanel h2:nth-of-type(2) {
-  color: #6e00ff;
-  font-size: 5vw;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-}
-
 @media (max-width: 766px) {
   .bottompanel {
-    width: 75%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -335,21 +293,26 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 375px) {
+  .bottompanel {
+    width: 75%;
+  }
   .bottompanel h3 {
     font-size: 5vw;
-  }
-  .bottompanel h2 {
-    font-size: 5vw;
-    margin-bottom: 0;
-  }
-  .bottompanel h2:nth-of-type(2) {
-    font-size: 10vw;
   }
   .bottompanel .frontEnd div {
     font-size: 8vw;
   }
+  .bottompanel .frontEnd div p {
+    font-size: 3vw;
+  }
+  .bottompanel .skills div h3 {
+    font-size: 25px;
+  }
   .bottompanel .skills div div {
     font-size: 5vw;
+  }
+  .bottompanel .skills div div p {
+    font-size: 25px;
   }
 }
 
@@ -413,57 +376,9 @@
   padding: 55px 0px;
 }
 
-.mainContainer .mainTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0 auto;
-}
-
-.mainContainer .mainTitle h2 {
-  width: 90%;
-  font-size: 1.5vw;
-  font-weight: normal;
-  margin: 25px auto;
-  font-weight: 400;
-  color: #221e41;
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: -25px;
-  margin-left: -25px;
-}
-
-.mainContainer .mainTitle h2:nth-of-type(2) {
-  color: #6e00ff;
-  font-size: 5vw;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-}
-
-@media (max-width: 1024px) {
-  .mainContainer .mainTitle h2 {
-    font-size: 5vw;
-  }
-  .mainContainer .mainTitle h2:nth-of-type(2) {
-    font-size: 10vw;
-  }
-}
-
 .container {
   width: 60%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 55px auto;
 }
 
@@ -521,6 +436,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-height: 280px;
   }
 }
 
@@ -550,12 +466,13 @@
   font-size: 3vw;
   text-shadow: 3px 3px 10px rgba(31, 38, 135, 0.37);
   margin: 0;
+  font-weight: 500;
 }
 
 .cardText h2 {
   color: white;
   font-size: 1vw;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @media (max-width: 1024px) {
@@ -567,6 +484,7 @@
   }
   .cardText h2 {
     font-size: 3vw;
+    margin: 25px auto;
   }
 }
 

@@ -39,21 +39,21 @@ const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
           x: { type: "spring", stiffness: 50 },
         }}
       >
-        <span>
-          <AiFillGithub fontSize="18px" data-tip data-for="github" />
+        <span data-tip data-for="github">
+          <AiFillGithub fontSize="18px" />
         </span>
-        <span>
+        <span data-tip data-for="linkedin">
           {" "}
-          <AiFillLinkedin fontSize="18px" data-tip data-for="linkedin" />
+          <AiFillLinkedin fontSize="18px" />
         </span>
 
-        <span>
-          <SiGmail fontSize="18px" data-tip data-for="gmail" />
+        <span data-tip data-for="gmail">
+          <SiGmail fontSize="18px" />
         </span>
 
-        <span>
+        <span data-tip data-for="resume">
           {" "}
-          <AiFillFilePdf fontSize="18px" data-tip data-for="resume" />
+          <AiFillFilePdf fontSize="18px" />
         </span>
       </motion.div>
       <SocialTooltip />

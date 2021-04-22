@@ -1,0 +1,16 @@
+.cursorMain {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 999999999;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  background-blend-mode: saturation;
+  border: 2px solid white;
+  color: #e100ff;
+}
+/*# sourceMappingURL=CustomCursor.module.css.map */

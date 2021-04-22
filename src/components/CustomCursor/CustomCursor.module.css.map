@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EAEZ,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,SAAS;EAClB,SAAS,EAAE,qBAAqB;EAChC,aAAa,EAAE,GAAG;EAClB,cAAc,EAAE,IAAI;EACpB,UAAU,EAAE,eAAe;EAC3B,qBAAqB,EAAE,UAAU;EACjC,MAAM,EAAE,eAAe;EACvB,KAAK,EAAE,OAAgB;CACxB",
+    "sources": [
+        "CustomCursor.module.scss"
+    ],
+    "names": [],
+    "file": "CustomCursor.module.css"
+}
