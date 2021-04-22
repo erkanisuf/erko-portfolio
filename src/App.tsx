@@ -4,6 +4,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Header from "./components/Header/Header";
 import MyWork from "./components/MyWork/MyWork";
+import Tooltip from "./components/Tooltip/Tooltip";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <AboutMe />
       <MyWork />
+      <Tooltip />
     </div>
   );
 }

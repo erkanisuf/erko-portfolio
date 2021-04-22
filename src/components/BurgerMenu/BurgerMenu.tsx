@@ -10,7 +10,7 @@ interface IBurgerMenu {
 const BurgerMenu: React.FC<IBurgerMenu> = ({ active, activeLink }) => {
   const [toggle, setToggle] = useState<boolean>(false);
 
-  // burger menu
+  // burger menu animation for the button to become X onclick
   const variantsBurger = {
     active: {
       rotateZ: 45,

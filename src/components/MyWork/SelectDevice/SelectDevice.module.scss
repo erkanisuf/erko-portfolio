@@ -1,0 +1,57 @@
+.deviceRight {
+  width: 100%;
+  color: rgb(209, 205, 205);
+  margin: 0 auto;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  div {
+    &:nth-child(1) {
+      order: 2;
+    }
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+  svg {
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: white;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 5vw;
+  }
+}
+
+.deviceLeft {
+  width: 100%;
+  color: rgb(209, 205, 205);
+  margin: 0 auto;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  svg {
+    cursor: pointer;
+    &:hover {
+      color: white;
+    }
+  }
+  @media (max-width: 1024px) {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 5vw;
+  }
+}

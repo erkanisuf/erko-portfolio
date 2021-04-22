@@ -16,6 +16,7 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
   activeLink,
   setToggle,
 }) => {
+  //animation to show the nav for mobiles
   const variantsMobileMenu = {
     active: {
       opacity: 1,
@@ -23,9 +24,11 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
     },
     inactive: { opacity: 0, x: "100%" },
   };
+  //closes the navigation for mobile
   const closeNav = (e: string) => {
     activeLink(e);
     setToggle(false);
+    window.location.href = e;
   };
   return (
     <motion.div
@@ -37,9 +40,9 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
         <ul>
           <li>
             <a
-              href="#a"
-              className={active === "#a" ? BurgerMenuCSS.active : ""}
-              onClick={() => closeNav("#a")}
+              href="#mywork"
+              className={active === "#mywork" ? BurgerMenuCSS.active : ""}
+              onClick={() => closeNav("#mywork")}
             >
               {" "}
               My work
@@ -48,15 +51,24 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
           <li>
             <a
               href="#s"
-              className={active === "#s" ? BurgerMenuCSS.active : ""}
-              onClick={() => closeNav("#s")}
+              className={active === "#myskills" ? BurgerMenuCSS.active : ""}
+              onClick={() => closeNav("#myskills")}
             >
               My skills
             </a>
           </li>
           <li>
             <a
-              href="#d"
+              href="#s"
+              className={active === "#aboutme" ? BurgerMenuCSS.active : ""}
+              onClick={() => closeNav("#aboutme")}
+            >
+              About Me
+            </a>
+          </li>
+          <li>
+            <a
+              href="#cotactme"
               className={active === "#d" ? BurgerMenuCSS.active : ""}
               onClick={() => closeNav("#d")}
             >

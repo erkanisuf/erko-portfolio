@@ -17,6 +17,7 @@ import { useInView } from "react-intersection-observer";
 import Tilt from "react-parallax-tilt";
 const AboutMe = () => {
   const { ref, inView } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
+  //Animations of H2 to re animate when scroll is in view
   const variants = {
     active: {
       scale: 1,

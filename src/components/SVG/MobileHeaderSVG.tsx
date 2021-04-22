@@ -18,7 +18,7 @@ const MobileHeaderSVG = () => {
         viewBox="0 0 773.114 610.804"
       >
         <path
-          fill="#e6e6e6"
+          fill="#221e41"
           d="M309.473 12.711H773.114V232.717H309.473z"
           data-name="Rectangle 62"
         ></path>

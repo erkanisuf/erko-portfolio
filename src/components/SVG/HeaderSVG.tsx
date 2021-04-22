@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useWindowSize from "./useWindowSize";
+
 const HeaderSVG = () => {
   const [width] = useWindowSize();
 

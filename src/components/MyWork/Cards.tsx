@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import MyWorkCSS from "./MyWork.module.css";
-
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
-import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
-import useWindowSize from "../SVG/useWindowSize";
+import DesktopImage from "./DekstopImage/DesktopImage";
+import MobileTabletImage from "./MobileTabletImage/MobileTabletImage";
+import SelectDevice from "./SelectDevice/SelectDevice";
 interface ICards {
   backgroundColor: string;
   backgroundImage: string;
   title: string;
   image: string;
+  mobileImage: string;
   oddOrEven: number;
   description: string;
+  stack: string[];
+  tabletImage: string;
 }
 const Cards: React.FC<ICards> = ({
   backgroundColor,
@@ -20,20 +21,36 @@ const Cards: React.FC<ICards> = ({
   image,
   oddOrEven,
   description,
+  stack,
+  mobileImage,
+  tabletImage,
 }) => {
-  const [width] = useWindowSize();
-  console.log(width);
-  const orderStyleRight = {
-    order: width > 1024 ? 2 : 0,
-    marginRight: width > 1024 ? "-5%" : "0%",
-    justifyContent: width > 1024 ? "flex-end" : "center",
-  };
-  const orderStyleLeft = {
-    order: 0,
-    marginLeft: width > 1024 ? "-8%" : "0%",
-    justifyContent: width > 1024 ? "" : "center",
-  };
+  const [device, setDevice] = useState<string>("desktop");
 
+  const typeOfImage = () => {
+    switch (device) {
+      case "desktop":
+        return (
+          <DesktopImage title={title} image={image} oddOrEven={oddOrEven} />
+        );
+      case "mobile":
+        return (
+          <MobileTabletImage
+            title={title}
+            image={mobileImage}
+            oddOrEven={oddOrEven}
+          />
+        );
+      case "tablet":
+        return (
+          <MobileTabletImage
+            title={title}
+            image={tabletImage}
+            oddOrEven={oddOrEven}
+          />
+        );
+    }
+  };
   return (
     <div
       className={MyWorkCSS.cardContainer}
@@ -42,52 +59,34 @@ const Cards: React.FC<ICards> = ({
         backgroundColor: backgroundColor,
       }}
     >
-      <div style={{ order: 1 }} className={MyWorkCSS.cardText}>
-        <div>
-          <h1>{title}</h1>
-          <h2>{description}</h2>
+      <div className={MyWorkCSS.itemContainer}>
+        <div className={MyWorkCSS.cardText}>
+          <div>
+            <h1>{title}</h1>
+            <h2>{description}</h2>
+          </div>
+          <div className={MyWorkCSS.description}></div>
+          <div className={MyWorkCSS.stackUsed}>
+            {stack.map((el, index) => {
+              return <div key={index}>{el}</div>;
+            })}
+          </div>
         </div>
         <div
-          className={MyWorkCSS.stackUsed}
-          style={{ alignSelf: oddOrEven % 2 === 0 ? "flex-end" : "flex-start" }}
+          className={
+            oddOrEven % 2 === 0 ? MyWorkCSS.rightOrder : MyWorkCSS.leftOrder
+          }
         >
-          <div>React</div>
-          <div>Node</div>
-          <div>.NET</div>
-        </div>
-        <div
-          className={MyWorkCSS.links}
-          style={{ alignSelf: oddOrEven % 2 === 0 ? "flex-end" : "flex-start" }}
-        >
-          <AiFillGithub />
-          <AiOutlineLink />
+          {/* Returns Mobile Image Desktop Or Tablet  */}
+          {typeOfImage()}
         </div>
       </div>
 
-      <motion.div
-        whileHover={
-          width > 1024
-            ? { x: oddOrEven % 2 === 0 ? 200 : -200, scale: 1.2 }
-            : {}
-        }
-        style={oddOrEven % 2 === 0 ? orderStyleLeft : orderStyleRight}
-      >
-        <Tilt
-          style={oddOrEven % 2 === 0 ? orderStyleLeft : orderStyleRight}
-          trackOnWindow={false}
-          transitionSpeed={5000}
-          tiltReverse={true}
-          perspective={2000}
-          className={MyWorkCSS.parralax}
-        >
-          <div
-            style={oddOrEven % 2 === 0 ? orderStyleLeft : orderStyleRight}
-            className={MyWorkCSS.cardImageWrapper}
-          >
-            <img src={image} alt={title} />
-          </div>
-        </Tilt>
-      </motion.div>
+      <SelectDevice
+        oddOrEven={oddOrEven}
+        setDevice={setDevice}
+        device={device}
+      />
     </div>
   );
 };

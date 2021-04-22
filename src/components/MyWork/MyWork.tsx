@@ -6,7 +6,7 @@ import Cards from "./Cards";
 import MyWorkCSS from "./MyWork.module.css";
 const MyWork = () => {
   const items = myProjects;
-  const { ref, inView } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
+  const { ref, inView } = useInView({ initialInView: true, delay: 500 }); // viewport to trigger animation
   const variants = {
     active: {
       scale: 1,
@@ -17,7 +17,7 @@ const MyWork = () => {
     },
   };
   return (
-    <div className={MyWorkCSS.mainContainer}>
+    <div className={MyWorkCSS.mainContainer} id="mywork">
       <motion.div
         initial={variants.inactive}
         variants={variants}
@@ -33,6 +33,9 @@ const MyWork = () => {
         {items.map((el, index) => {
           return (
             <Cards
+              tabletImage={el.tabletImage}
+              mobileImage={el.mobileImage}
+              stack={el.stack}
               description={el.description}
               oddOrEven={index}
               image={el.image}
