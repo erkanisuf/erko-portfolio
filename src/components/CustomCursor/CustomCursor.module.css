@@ -1,16 +1,30 @@
 .cursorMain {
-  width: 25px;
-  height: 25px;
+  width: 55px;
+  height: 55px;
   position: absolute;
   z-index: 999999999;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
-  -webkit-transition: background 0.5s;
-  transition: background 0.5s;
-  background-blend-mode: saturation;
-  border: 2px solid white;
-  color: #e100ff;
+}
+
+.cursorText {
+  background-color: #41361e;
+  width: 150px;
+  height: 150px;
+  mix-blend-mode: difference;
+  position: absolute;
+  z-index: 999999999;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.textCursor {
+  color: #fff;
+  width: 100px;
+  height: 100px;
 }
 /*# sourceMappingURL=CustomCursor.module.css.map */

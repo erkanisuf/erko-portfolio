@@ -1,14 +1,27 @@
 .cursorMain {
-  width: 25px;
-  height: 25px;
-  //   background: #6f00ff9f;
+  width: 55px;
+  height: 55px;
+
   position: absolute;
   z-index: 999999999;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
-  transition: background 0.5s;
-  background-blend-mode: saturation;
-  border: 2px solid white;
-  color: rgb(225, 0, 255);
+}
+
+.cursorText {
+  background-color: #41361e;
+  width: 150px;
+  height: 150px;
+  mix-blend-mode: difference;
+  position: absolute;
+  z-index: 999999999;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.textCursor {
+  color: #fff;
+  width: 100px;
+  height: 100px;
 }

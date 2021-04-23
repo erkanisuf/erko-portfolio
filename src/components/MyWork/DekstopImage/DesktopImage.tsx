@@ -35,7 +35,7 @@ const DesktopImage: React.FC<IDesktopImage> = ({ oddOrEven, image, title }) => {
           className={DesktopImageCSS.parralax}
         >
           <div className={DesktopImageCSS.cardImageWrapper}>
-            <img src={image} alt={title} />
+            <img src={image} alt={title} id="projectcard" />
           </div>
         </Tilt>
       </motion.div>

@@ -37,6 +37,7 @@ const AboutMe = () => {
             </div>
           </Tilt>
           <motion.p
+            id="textaboutme"
             whileHover={{ scale: 1.09 }}
             initial={pAnime.inactive}
             variants={pAnime}

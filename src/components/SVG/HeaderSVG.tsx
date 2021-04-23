@@ -221,6 +221,7 @@ const HeaderSVG = () => {
       ></path>
 
       <motion.path
+        id="scrolldownid"
         initial={{ x: -83.443, y: -180.598 }}
         animate={{ x: -83.443, y: -150.598 }}
         transition={{ duration: 1, repeatType: "mirror", repeat: Infinity }}
@@ -230,6 +231,7 @@ const HeaderSVG = () => {
       ></motion.path>
 
       <motion.path
+        id="scrolldownid"
         initial={{ x: -83.443, y: -180.598 }}
         animate={{ x: -83.443, y: -150.598 }}
         transition={{ duration: 1, repeatType: "mirror", repeat: Infinity }}

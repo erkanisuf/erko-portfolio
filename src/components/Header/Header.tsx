@@ -69,6 +69,7 @@ const Header = () => {
             <motion.h2 variants={item}>Front end developer</motion.h2>
 
             <motion.button
+              id="letstalk"
               whileHover={{
                 scale: 1.1,
               }}
