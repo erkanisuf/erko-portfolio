@@ -14,8 +14,8 @@ const Title: React.FC<ITitle> = ({ smalltext, bigtext, alignItems }) => {
   const startanimate = useAnimation();
 
   const variants = {
-    active: { opacity: 1, x: 0 },
-    inactive: { opacity: 0, x: 200 },
+    active: { opacity: 1, scale: 1 },
+    inactive: { opacity: 0, scale: 0 },
   };
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Title: React.FC<ITitle> = ({ smalltext, bigtext, alignItems }) => {
       initial="inactive"
       variants={variants}
       animate={startanimate}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       className={TitleCSS.containerTitle}
       style={{ alignItems: alignItems }}
     >

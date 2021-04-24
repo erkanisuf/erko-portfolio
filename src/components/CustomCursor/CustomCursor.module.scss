@@ -1,12 +1,15 @@
 .cursorMain {
-  width: 55px;
-  height: 55px;
+  width: 5px;
+  height: 5px;
 
   position: absolute;
   z-index: 999999999;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .cursorText {
@@ -19,6 +22,9 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 .textCursor {
   color: #fff;

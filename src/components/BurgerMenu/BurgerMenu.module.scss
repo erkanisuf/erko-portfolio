@@ -3,6 +3,7 @@ $pinkViolet: rgb(255, 100, 203);
 $darkViolet: #221e41;
 $lightViolet: #6e00ff;
 .burger {
+  cursor: pointer;
   display: none;
   @media (max-width: 1024px) {
     display: flex;

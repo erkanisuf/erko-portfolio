@@ -72,20 +72,27 @@ $darkViolet: #221e41;
       font-weight: 800;
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) and (min-width: 768px) {
     width: 75%;
     flex-direction: column;
     padding: 50px 0px;
-
-    p {
-      font-size: 15px;
-    }
-  }
-  @media (max-width: 767px) {
     div {
       flex-direction: column;
     }
     p {
+      font-size: 3vw;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    width: 75%;
+    div {
+      flex-direction: column;
+    }
+    p {
+      font-size: 4vw;
       border: none;
       margin: 0 auto;
       padding: 25px 0px;

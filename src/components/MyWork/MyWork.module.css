@@ -108,7 +108,8 @@
     padding: 50px 0px;
   }
   .upperpanel p {
-    font-size: 15px;
+    background-color: red;
+    font-size: 25px;
   }
 }
 

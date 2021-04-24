@@ -1,6 +1,11 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
-import { AiFillFilePdf, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import {
+  AiFillFilePdf,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineMobile,
+} from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 
 import SocialTooltip from "../Tooltip/SocialTooltip";
@@ -54,6 +59,10 @@ const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
         <span data-tip data-for="resume">
           {" "}
           <AiFillFilePdf fontSize="18px" />
+        </span>
+        <span data-tip data-for="myphone">
+          {" "}
+          <AiOutlineMobile fontSize="18px" />
         </span>
       </motion.div>
       <SocialTooltip />

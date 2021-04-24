@@ -12,7 +12,7 @@ const Navigation: React.FC<INavigation> = ({ active, activeLink }) => {
         <ul>
           <li>
             <a
-              href="#a"
+              href="#mywork"
               className={active === "#a" ? HeaderCSS.active : ""}
               onClick={() => activeLink("#a")}
             >

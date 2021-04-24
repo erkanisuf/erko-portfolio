@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import AboutMe from "./components/AboutMe/AboutMe";
 import CustomCursor from "./components/CustomCursor/CustomCursor";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import MyWork from "./components/MyWork/MyWork";
 
@@ -17,6 +18,7 @@ function App() {
 
       <MyWork />
       <Tooltip />
+      <Footer />
     </div>
   );
 }

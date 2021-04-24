@@ -46,6 +46,16 @@ const SocialTooltip = () => {
       >
         <p>Linkedin profile</p>
       </ReactTooltip>
+      <ReactTooltip
+        id="myphone"
+        place="left"
+        type="info"
+        backgroundColor="#221e41"
+        aria-haspopup="true"
+        className={HeaderCSS.popUpThemeGmail}
+      >
+        <p>+358503040519</p>
+      </ReactTooltip>
     </>
   );
 };

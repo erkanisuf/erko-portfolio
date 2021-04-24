@@ -32,8 +32,8 @@ const Cards: React.FC<ICards> = ({
   const startanimate = useAnimation();
 
   const variants = {
-    active: { opacity: 1, x: 0 },
-    inactive: { opacity: 0, x: 200 },
+    active: { opacity: 1 },
+    inactive: { opacity: 0 },
   };
 
   useEffect(() => {
