@@ -98,7 +98,7 @@
   font-weight: 800;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .upperpanel {
     width: 75%;
     -webkit-box-orient: vertical;
@@ -107,13 +107,6 @@
             flex-direction: column;
     padding: 50px 0px;
   }
-  .upperpanel p {
-    background-color: red;
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 767px) {
   .upperpanel div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -121,6 +114,25 @@
             flex-direction: column;
   }
   .upperpanel p {
+    font-size: 3vw;
+  }
+  .upperpanel p::before {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .upperpanel {
+    width: 75%;
+  }
+  .upperpanel div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upperpanel p {
+    font-size: 4vw;
     border: none;
     margin: 0 auto;
     padding: 25px 0px;

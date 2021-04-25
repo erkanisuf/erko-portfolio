@@ -45,4 +45,12 @@
 .cardImageWrapper img {
   width: 100%;
 }
+
+@media (max-width: 1024px) {
+  .cardImageWrapper img {
+    max-height: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 /*# sourceMappingURL=MobileTabletImage.module.css.map */

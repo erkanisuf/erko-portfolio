@@ -1,7 +1,9 @@
 .deviceRight {
   width: 100%;
+
   color: rgb(209, 205, 205);
   margin: 0 auto;
+  padding-top: 55px;
   font-size: 1.5vw;
   display: flex;
   flex-direction: row;
@@ -24,6 +26,7 @@
   }
 
   @media (max-width: 1024px) {
+    padding-top: 0px;
     width: 80%;
     flex-direction: row;
     justify-content: space-between;
@@ -36,6 +39,7 @@
   width: 100%;
   color: rgb(209, 205, 205);
   margin: 0 auto;
+  padding-top: 55px;
   font-size: 1.5vw;
   display: flex;
   flex-direction: row;
@@ -48,6 +52,7 @@
     }
   }
   @media (max-width: 1024px) {
+    padding-top: 0px;
     width: 80%;
     flex-direction: row;
     justify-content: space-between;

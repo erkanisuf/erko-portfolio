@@ -10,6 +10,7 @@ import { SiGmail } from "react-icons/si";
 
 import SocialTooltip from "../Tooltip/SocialTooltip";
 import HeaderCSS from "./Header.module.css";
+
 interface ISocialLinks {
   inView: boolean;
   entry: any;
@@ -44,23 +45,48 @@ const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
           x: { type: "spring", stiffness: 50 },
         }}
       >
-        <span data-tip data-for="github">
+        <span
+          data-tip
+          data-for="github"
+          onClick={() => window.open("https://github.com/erkanisuf", "_blank")}
+        >
           <AiFillGithub fontSize="18px" />
         </span>
-        <span data-tip data-for="linkedin">
+        <span
+          data-tip
+          data-for="linkedin"
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/erkan-isuf-a25b21202/",
+              "_blank"
+            )
+          }
+        >
           {" "}
           <AiFillLinkedin fontSize="18px" />
         </span>
 
-        <span data-tip data-for="gmail">
+        <span
+          data-tip
+          data-for="gmail"
+          onClick={() => (window.location.href = "mailto:erkanisuf@gmail.com")}
+        >
           <SiGmail fontSize="18px" />
         </span>
 
-        <span data-tip data-for="resume">
+        <span
+          data-tip
+          data-for="resume"
+          onClick={() => window.open("resume.pdf", "_blank")}
+        >
           {" "}
           <AiFillFilePdf fontSize="18px" />
         </span>
-        <span data-tip data-for="myphone">
+        <span
+          data-tip
+          data-for="myphone"
+          onClick={() => (window.location.href = "tel:+358503040519")}
+        >
           {" "}
           <AiOutlineMobile fontSize="18px" />
         </span>

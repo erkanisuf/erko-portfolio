@@ -54,7 +54,7 @@ const SocialTooltip = () => {
         aria-haspopup="true"
         className={HeaderCSS.popUpThemeGmail}
       >
-        <p>+358503040519</p>
+        <p style={{ fontSize: "12px", paddingTop: "15px" }}>+358503040519</p>
       </ReactTooltip>
     </>
   );

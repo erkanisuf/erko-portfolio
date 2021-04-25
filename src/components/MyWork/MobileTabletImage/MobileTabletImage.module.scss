@@ -22,9 +22,14 @@
 
   display: flex;
   cursor: pointer;
+
   img {
     width: 100%;
   }
   @media (max-width: 1024px) {
+    img {
+      max-height: 200px;
+      object-fit: contain;
+    }
   }
 }

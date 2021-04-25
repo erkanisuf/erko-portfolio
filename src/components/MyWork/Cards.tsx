@@ -5,6 +5,7 @@ import MobileTabletImage from "./MobileTabletImage/MobileTabletImage";
 import SelectDevice from "./SelectDevice/SelectDevice";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import TabletImage from "./TabletImage/TabletImage";
 interface ICards {
   backgroundColor: string;
   backgroundImage: string;
@@ -61,7 +62,7 @@ const Cards: React.FC<ICards> = ({
         );
       case "tablet":
         return (
-          <MobileTabletImage
+          <TabletImage
             title={title}
             image={tabletImage}
             oddOrEven={oddOrEven}

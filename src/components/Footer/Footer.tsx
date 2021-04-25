@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaHome, FaPhoneAlt } from "react-icons/fa";
-import FooterSVG from "../SVG/FooterSVG";
+
 import FooterCSS from "./Footer.module.css";
 const Footer = () => {
   return (

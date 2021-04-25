@@ -69,12 +69,14 @@ const Header = () => {
             <motion.h2 variants={item}>Front end developer</motion.h2>
 
             <motion.button
+              data-testid="btnletstalk"
               id="letstalk"
               whileHover={{
                 scale: 1.1,
               }}
               transition={{ duration: 0.1 }}
               variants={item}
+              onClick={() => (window.location.href = "#contact")}
             >
               LET`S TALK!
             </motion.button>

@@ -1,0 +1,65 @@
+.parralax {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+
+@media (max-width: 767px) {
+  .parralax {
+    padding: 15px;
+  }
+}
+
+.cardImageWrapper {
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.cardImageWrapper img {
+  width: 100%;
+}
+
+.leftOrder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -200px;
+}
+
+@media (max-width: 1024px) {
+  .leftOrder {
+    margin: 0 auto;
+  }
+}
+
+.rightOrder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: -200px;
+}
+
+@media (max-width: 1024px) {
+  .rightOrder {
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=TabletImage.module.css.map */
