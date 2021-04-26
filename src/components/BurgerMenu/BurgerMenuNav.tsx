@@ -40,6 +40,7 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
         <ul>
           <li>
             <a
+              data-testid="mobilemywork"
               href="#mywork"
               className={active === "#mywork" ? BurgerMenuCSS.active : ""}
               onClick={() => closeNav("#mywork")}
@@ -50,7 +51,8 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
           </li>
           <li>
             <a
-              href="#s"
+              data-testid="mobilemyskills"
+              href="#myskills"
               className={active === "#myskills" ? BurgerMenuCSS.active : ""}
               onClick={() => closeNav("#myskills")}
             >
@@ -59,7 +61,8 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
           </li>
           <li>
             <a
-              href="#s"
+              data-testid="mobileaboutme"
+              href="#aboutme"
               className={active === "#aboutme" ? BurgerMenuCSS.active : ""}
               onClick={() => closeNav("#aboutme")}
             >
@@ -68,9 +71,10 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
           </li>
           <li>
             <a
-              href="#cotactme"
-              className={active === "#d" ? BurgerMenuCSS.active : ""}
-              onClick={() => closeNav("#d")}
+              data-testid="mobilecontactme"
+              href="#contactme"
+              className={active === "#contactme" ? BurgerMenuCSS.active : ""}
+              onClick={() => closeNav("#contactme")}
             >
               Contact me
             </a>

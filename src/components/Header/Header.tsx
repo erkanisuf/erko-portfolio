@@ -96,6 +96,7 @@ const Header = () => {
       </div>
       {/* Back to Fornt page arrow */}
       <motion.div
+        data-testid="backtotop"
         onClick={() => {
           window.location.href = "#";
           activeLink("");

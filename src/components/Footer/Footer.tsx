@@ -5,7 +5,7 @@ import { FaHome, FaPhoneAlt } from "react-icons/fa";
 import FooterCSS from "./Footer.module.css";
 const Footer = () => {
   return (
-    <footer className={FooterCSS.container}>
+    <footer className={FooterCSS.container} id="contactme">
       <div className={FooterCSS.buildTogether}>
         <h1>Interested in collaboration ?</h1>
         <h2> Leave me a message and lets grab a coffee!</h2>
@@ -34,16 +34,25 @@ const Footer = () => {
             <nav className={FooterCSS.footernav}>
               <ul>
                 <li>
-                  <a href="#mywork"> My work</a>
+                  <a data-testid="footermywork" href="#mywork">
+                    {" "}
+                    My work
+                  </a>
                 </li>
                 <li>
-                  <a href="#myskills">My skills</a>
+                  <a data-testid="footermyskills" href="#myskills">
+                    My skills
+                  </a>
                 </li>
                 <li>
-                  <a href="#aboutme">About Me</a>
+                  <a data-testid="footeraboutme" href="#aboutme">
+                    About Me
+                  </a>
                 </li>
                 <li>
-                  <a href="#d">Contact me</a>
+                  <a data-testid="footercontactme" href="#contactme">
+                    Contact me
+                  </a>
                 </li>
               </ul>
             </nav>

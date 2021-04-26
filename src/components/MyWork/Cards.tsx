@@ -86,8 +86,8 @@ const Cards: React.FC<ICards> = ({
       <div className={MyWorkCSS.itemContainer}>
         <div className={MyWorkCSS.cardText}>
           <div>
-            <h1>{title}</h1>
-            <h2>{description}</h2>
+            <h2>{title}</h2>
+            <h3>{description}</h3>
           </div>
           <div className={MyWorkCSS.description}></div>
           <div className={MyWorkCSS.stackUsed}>

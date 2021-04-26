@@ -59,23 +59,23 @@
   align-items: center;
   order: 1;
 
-  h1 {
-    color: white;
+  h2 {
+    color: rgb(255, 255, 255);
     font-size: 3vw;
     text-shadow: 3px 3px 10px rgba(31, 38, 135, 0.37);
-    margin: 0;
+
     font-weight: 500;
   }
-  h2 {
-    color: white;
+  h3 {
+    color: rgb(255, 255, 255);
     font-size: 1vw;
     font-weight: 300;
   }
   @media (max-width: 1024px) {
-    h1 {
+    h2 {
       font-size: 5vw;
     }
-    h2 {
+    h3 {
       font-size: 3vw;
       margin: 25px auto;
     }
