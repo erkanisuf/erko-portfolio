@@ -76,7 +76,7 @@ const Header = () => {
               }}
               transition={{ duration: 0.1 }}
               variants={item}
-              onClick={() => (window.location.href = "#contact")}
+              onClick={() => (window.location.href = "#contactme")}
             >
               LET`S TALK!
             </motion.button>
@@ -101,6 +101,7 @@ const Header = () => {
           window.location.href = "#";
           activeLink("");
         }}
+        transition={{ type: "spring", stiffness: 500 }}
         whileHover={{ scale: 1.3 }}
         animate={!inView ? variantsUpArrow.active : variantsUpArrow.inactive}
         className={HeaderCSS.showArrowUp}

@@ -80,6 +80,7 @@ footer {
   margin: 15px 0px;
   font-weight: 300;
   font-size: 1vw;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {

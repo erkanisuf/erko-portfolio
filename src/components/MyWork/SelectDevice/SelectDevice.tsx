@@ -8,11 +8,15 @@ interface ISelectDevice {
   oddOrEven: number;
   setDevice: any;
   device: string;
+  github: string;
+  livepreview: string;
 }
 const SelectDevice: React.FC<ISelectDevice> = ({
   oddOrEven,
   setDevice,
   device,
+  github,
+  livepreview,
 }) => {
   return (
     <div
@@ -42,7 +46,7 @@ const SelectDevice: React.FC<ISelectDevice> = ({
           data-for="desktop"
         />
       </div>
-      <GitHubAndLink />
+      <GitHubAndLink github={github} livepreview={livepreview} />
     </div>
   );
 };

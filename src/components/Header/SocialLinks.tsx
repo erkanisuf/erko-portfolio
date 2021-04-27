@@ -15,6 +15,10 @@ interface ISocialLinks {
   inView: boolean;
   entry: any;
 }
+
+export const openNewTab = (e: string) => {
+  window.open(e, "_blank");
+};
 const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
   const controls = useAnimation(); //framer motion
   const variants = {
@@ -48,7 +52,7 @@ const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
         <span
           data-tip
           data-for="github"
-          onClick={() => window.open("https://github.com/erkanisuf", "_blank")}
+          onClick={() => openNewTab("https://github.com/erkanisuf")}
         >
           <AiFillGithub fontSize="18px" />
         </span>
@@ -56,10 +60,7 @@ const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
           data-tip
           data-for="linkedin"
           onClick={() =>
-            window.open(
-              "https://www.linkedin.com/in/erkan-isuf-a25b21202/",
-              "_blank"
-            )
+            openNewTab("https://www.linkedin.com/in/erkan-isuf-a25b21202/")
           }
         >
           {" "}
@@ -69,7 +70,7 @@ const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
         <span
           data-tip
           data-for="gmail"
-          onClick={() => (window.location.href = "mailto:erkanisuf@gmail.com")}
+          onClick={() => openNewTab("mailto:erkanisuf@gmail.com")}
         >
           <SiGmail fontSize="18px" />
         </span>
@@ -77,7 +78,7 @@ const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
         <span
           data-tip
           data-for="resume"
-          onClick={() => window.open("resume.pdf", "_blank")}
+          onClick={() => openNewTab("resume.pdf")}
         >
           {" "}
           <AiFillFilePdf fontSize="18px" />
@@ -85,7 +86,7 @@ const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
         <span
           data-tip
           data-for="myphone"
-          onClick={() => (window.location.href = "tel:+358503040519")}
+          onClick={() => openNewTab("tel:+358503040519")}
         >
           {" "}
           <AiOutlineMobile fontSize="18px" />

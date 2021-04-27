@@ -13,20 +13,7 @@ const MyWork = () => {
 
       <div className={MyWorkCSS.container}>
         {items.map((el, index) => {
-          return (
-            <Cards
-              tabletImage={el.tabletImage}
-              mobileImage={el.mobileImage}
-              stack={el.stack}
-              description={el.description}
-              oddOrEven={index}
-              image={el.image}
-              title={el.title}
-              key={index}
-              backgroundColor={el.backgroundColor}
-              backgroundImage={el.backgroundImage}
-            />
-          );
+          return <Cards {...el} oddOrEven={index} key={index} />;
         })}
       </div>
     </div>

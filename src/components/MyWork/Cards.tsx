@@ -6,6 +6,7 @@ import SelectDevice from "./SelectDevice/SelectDevice";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import TabletImage from "./TabletImage/TabletImage";
+import { openNewTab } from "../Header/SocialLinks";
 interface ICards {
   backgroundColor: string;
   backgroundImage: string;
@@ -16,6 +17,8 @@ interface ICards {
   description: string;
   stack: string[];
   tabletImage: string;
+  github: string;
+  livepreview: string;
 }
 const Cards: React.FC<ICards> = ({
   backgroundColor,
@@ -27,6 +30,8 @@ const Cards: React.FC<ICards> = ({
   stack,
   mobileImage,
   tabletImage,
+  github,
+  livepreview,
 }) => {
   const [device, setDevice] = useState<string>("desktop");
   const { ref, inView } = useInView({ initialInView: true, delay: 0 }); // checks if social media bar is in view or not
@@ -50,7 +55,12 @@ const Cards: React.FC<ICards> = ({
     switch (device) {
       case "desktop":
         return (
-          <DesktopImage title={title} image={image} oddOrEven={oddOrEven} />
+          <DesktopImage
+            title={title}
+            image={image}
+            oddOrEven={oddOrEven}
+            livepreview={livepreview}
+          />
         );
       case "mobile":
         return (
@@ -58,6 +68,7 @@ const Cards: React.FC<ICards> = ({
             title={title}
             image={mobileImage}
             oddOrEven={oddOrEven}
+            livepreview={livepreview}
           />
         );
       case "tablet":
@@ -66,6 +77,7 @@ const Cards: React.FC<ICards> = ({
             title={title}
             image={tabletImage}
             oddOrEven={oddOrEven}
+            livepreview={livepreview}
           />
         );
     }
@@ -86,7 +98,7 @@ const Cards: React.FC<ICards> = ({
       <div className={MyWorkCSS.itemContainer}>
         <div className={MyWorkCSS.cardText}>
           <div>
-            <h2>{title}</h2>
+            <h2 onClick={() => openNewTab(livepreview)}>{title}</h2>
             <h3>{description}</h3>
           </div>
           <div className={MyWorkCSS.description}></div>
@@ -107,6 +119,8 @@ const Cards: React.FC<ICards> = ({
       </div>
 
       <SelectDevice
+        livepreview={livepreview}
+        github={github}
         oddOrEven={oddOrEven}
         setDevice={setDevice}
         device={device}

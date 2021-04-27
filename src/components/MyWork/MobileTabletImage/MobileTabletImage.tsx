@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { openNewTab } from "../../Header/SocialLinks";
 import MobileTabletImageCSS from "./MobileTabletImage.module.css";
 
 interface IMobileTabletImage {
   oddOrEven: number;
   image: string;
   title: string;
+  livepreview: string;
 }
 const MobileTabletImage: React.FC<IMobileTabletImage> = ({
-  oddOrEven,
   image,
   title,
+  livepreview,
 }) => {
   return (
     <div className={MobileTabletImageCSS.container}>
@@ -27,7 +29,10 @@ const MobileTabletImage: React.FC<IMobileTabletImage> = ({
           perspective={2000}
           className={MobileTabletImageCSS.parralax}
         >
-          <div className={MobileTabletImageCSS.cardImageWrapper}>
+          <div
+            className={MobileTabletImageCSS.cardImageWrapper}
+            onClick={() => openNewTab(livepreview)}
+          >
             <img src={image} alt={title} />
           </div>
         </Tilt>

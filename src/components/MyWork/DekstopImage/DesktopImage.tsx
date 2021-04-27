@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { openNewTab } from "../../Header/SocialLinks";
 import useWindowSize from "../../SVG/useWindowSize";
 import DesktopImageCSS from "./DesktopImage.module.css";
 
@@ -8,8 +9,14 @@ interface IDesktopImage {
   oddOrEven: number;
   image: string;
   title: string;
+  livepreview: string;
 }
-const DesktopImage: React.FC<IDesktopImage> = ({ oddOrEven, image, title }) => {
+const DesktopImage: React.FC<IDesktopImage> = ({
+  oddOrEven,
+  image,
+  title,
+  livepreview,
+}) => {
   const [width] = useWindowSize();
 
   return (
@@ -34,7 +41,10 @@ const DesktopImage: React.FC<IDesktopImage> = ({ oddOrEven, image, title }) => {
           perspective={2000}
           className={DesktopImageCSS.parralax}
         >
-          <div className={DesktopImageCSS.cardImageWrapper}>
+          <div
+            className={DesktopImageCSS.cardImageWrapper}
+            onClick={() => openNewTab(livepreview)}
+          >
             <img src={image} alt={title} id="projectcard" />
           </div>
         </Tilt>

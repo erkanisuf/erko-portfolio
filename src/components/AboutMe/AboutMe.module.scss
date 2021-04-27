@@ -72,6 +72,11 @@ $darkViolet: #221e41;
       font-weight: 800;
     }
   }
+  @media (max-width: 1300px) and (min-width: 1025px) {
+    p {
+      font-size: 1.5vw;
+    }
+  }
   @media (max-width: 1024px) and (min-width: 768px) {
     width: 75%;
     flex-direction: column;

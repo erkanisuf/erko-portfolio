@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaHome, FaPhoneAlt } from "react-icons/fa";
+import { openNewTab } from "../Header/SocialLinks";
 
 import FooterCSS from "./Footer.module.css";
 const Footer = () => {
@@ -14,12 +15,12 @@ const Footer = () => {
         <div className={FooterCSS.itemsContainer}>
           <div className={FooterCSS.contact}>
             <h3>Contact Me</h3>
-            <span>
+            <span onClick={() => openNewTab("tel:+358503040519")}>
               <FaPhoneAlt />
               {"  "}
               +358 50 30 40 519
             </span>
-            <span>
+            <span onClick={() => openNewTab("mailto:erkanisuf@gmail.com")}>
               <AiOutlineMail />
               {"  "}erkanisuf@gmail.com
             </span>

@@ -1,12 +1,13 @@
 import Enzyme, { shallow } from "enzyme";
 import "react-dom";
+import "@testing-library/jest-dom/extend-expect";
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import { getByText, render, screen } from "@testing-library/react";
+import { fireEvent, getByText, render, screen } from "@testing-library/react";
 import React from "react";
 import App from "../App";
 import Header from "../components/Header/Header";
 import Navigation from "../components/Header/Navigation";
-import SocialLinks from "../components/Header/SocialLinks";
+import SocialLinks, { openNewTab } from "../components/Header/SocialLinks";
 import BurgerMenu from "../components/BurgerMenu/BurgerMenu";
 import BurgerMenuNav from "../components/BurgerMenu/BurgerMenuNav";
 import AboutMe from "../components/AboutMe/AboutMe";
@@ -26,10 +27,10 @@ describe("Component renders", () => {
     const btnLetsTalk = wrapper.find(`[data-testid="btnletstalk"]`);
     expect(wrapper.contains("Erkan Isuf")).toEqual(true);
     expect(wrapper.contains("Front end developer")).toEqual(true);
-    //Btn test
+    //Main button tests in the div if does it work and moves the page to id #contactme
     expect(btnLetsTalk).toHaveLength(1);
     btnLetsTalk.simulate("click");
-    expect(window.location.href).toEqual("http://localhost/#contact");
+    expect(window.location.href).toEqual("http://localhost/#contactme");
     wrapper.find(`[data-testid="backtotop"]`).simulate("click");
     expect(window.location.href).toEqual("http://localhost/#");
   });
@@ -51,7 +52,7 @@ describe("Component renders", () => {
     expect(wrapper.contains("My skills")).toEqual(true);
     expect(wrapper.contains("About Me")).toEqual(true);
     expect(wrapper.contains("Contact me")).toEqual(true);
-
+    // Tests if onCLick event works and if navigation works
     wrapper.find(`[data-testid="myworkhref"]`).simulate("click");
     expect(window.location.href).toEqual("http://localhost/#mywork");
     wrapper.find(`[data-testid="myskillshref"]`).simulate("click");
@@ -64,6 +65,15 @@ describe("Component renders", () => {
 
   it("renders <SocialLinks /> check if links work", () => {
     const wrapper = shallow(<SocialLinks inView={true} entry={""} />);
+    // use Global , doesnt work with window.open
+    global.open = jest.fn();
+
+    wrapper.find(`[data-for="myphone"]`).simulate("click");
+    wrapper.find(`[data-for="resume"]`).simulate("click");
+    wrapper.find(`[data-for="gmail"]`).simulate("click");
+    wrapper.find(`[data-for="linkedin"]`).simulate("click");
+    wrapper.find(`[data-for="github"]`).simulate("click");
+    expect(global.open).toBeCalled();
   });
   it("mobile test <Burger /> ", () => {
     const wrapper = shallow(<BurgerMenu active={""} activeLink={""} />);
@@ -81,6 +91,7 @@ describe("Component renders", () => {
     expect(wrapper.contains("My skills")).toEqual(true);
     expect(wrapper.contains("About Me")).toEqual(true);
     expect(wrapper.contains("Contact me")).toEqual(true);
+    // check if onClick event works  of social links
     wrapper.find(`[data-testid="mobilemywork"]`).simulate("click");
     expect(window.location.href).toEqual("http://localhost/#mywork");
     wrapper.find(`[data-testid="mobilemyskills"]`).simulate("click");
@@ -92,15 +103,17 @@ describe("Component renders", () => {
   });
 
   it("component <AboutMe /> ", () => {
+    // the p tags text
     const text =
       "I am Erko and I am a passionate front-end developer. I love to use new technologies to build amazing products and solve different issues with the help of tech. I enjoy mostly the front end, however I also got experience with back-end technologies. Would love hear from you job opportunities, projects or a volunteer work. Lets create amazing products together!";
     const wrapper = shallow(<AboutMe />);
     expect(wrapper.contains(text)).toEqual(true);
+    //title text
     expect(wrapper.contains("Frontend")).toEqual(true);
     expect(wrapper.contains("Backend")).toEqual(true);
     expect(wrapper.contains("Database")).toEqual(true);
     expect(wrapper.contains("Tests")).toEqual(true);
-    //Stack
+    //Stack text
     expect(wrapper.contains("React")).toEqual(true);
     expect(wrapper.contains("Typescript")).toEqual(true);
     expect(wrapper.contains(" HTML")).toEqual(true);
@@ -112,18 +125,20 @@ describe("Component renders", () => {
     expect(wrapper.contains("Mongo")).toEqual(true);
     expect(wrapper.contains("Jest")).toEqual(true);
   });
-  it("mobile test <Title /> ", () => {
+  it("component <Title /> ", () => {
     const wrapper = shallow(
       <Title smalltext="smalltext" bigtext="bigtext" alignItems="center" />
     );
+    //texts html
     expect(wrapper.contains("smalltext")).toEqual(true);
     expect(wrapper.contains("bigtext")).toEqual(true);
   });
 
-  it("mobile test <MyWork /> ", () => {
+  it("component <MyWork /> ", () => {
     const wrapper = shallow(<MyWork />);
   });
-  it("mobile test <Cards /> ", () => {
+  it("component  <Cards /> ", () => {
+    //fake object
     const data = {
       title: "Personal Trainer",
       image: "",
@@ -137,26 +152,30 @@ describe("Component renders", () => {
       stack: ["React", "Node", "SQL"],
     };
     const wrapper = shallow(<Cards {...data} oddOrEven={2} />);
+    //htmls texts
     expect(wrapper.contains("Personal Trainer")).toEqual(true);
     expect(
       wrapper.contains("App to book and keep schedule of customers")
     ).toEqual(true);
     expect(wrapper.contains("React")).toEqual(true);
   });
-  it("mobile test <Footer/> ", () => {
+
+  it("component <Footer/> ", () => {
     const wrapper = shallow(<Footer />);
+    // texts
     expect(wrapper.contains("Contact Me")).toEqual(true);
     expect(wrapper.contains("+358 50 30 40 519")).toEqual(true);
     expect(wrapper.contains("erkanisuf@gmail.com")).toEqual(true);
     expect(wrapper.contains("Helsinki, Finland")).toEqual(true);
     expect(wrapper.contains("My work")).toEqual(true);
-    // wrapper.find(`[data-testid="footermywork"]`).simulate("click");
-    // expect(window.location.href).toEqual("http://localhost/#mywork");
-    // wrapper.find(`[data-testid="footermyskills"]`).simulate("click");
-    // expect(window.location.href).toEqual("http://localhost/#myskills");
-    // wrapper.find(`[data-testid="footeraboutme"]`).simulate("click");
-    // expect(window.location.href).toEqual("http://localhost/#aboutme");
-    // wrapper.find(`[data-testid="footercontactme"]`).simulate("click");
-    // expect(window.location.href).toEqual("http://localhost/#contactme");
+    const { getByTestId } = render(<Footer />);
+    // Tests of Ahref links if work .
+    expect(getByTestId("footermywork")).toHaveAttribute("href", "#mywork");
+    expect(getByTestId("footermyskills")).toHaveAttribute("href", "#myskills");
+    expect(getByTestId("footeraboutme")).toHaveAttribute("href", "#aboutme");
+    expect(getByTestId("footercontactme")).toHaveAttribute(
+      "href",
+      "#contactme"
+    );
   });
 });

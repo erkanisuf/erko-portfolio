@@ -98,6 +98,12 @@
   font-weight: 800;
 }
 
+@media (max-width: 1300px) and (min-width: 1025px) {
+  .upperpanel p {
+    font-size: 1.5vw;
+  }
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .upperpanel {
     width: 75%;

@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { AiFillFilePdf, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import {
+  AiFillFilePdf,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineMobile,
+} from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
+import { openNewTab } from "../Header/SocialLinks";
 
 import BurgerMenuCSS from "./BurgerMenu.module.css";
 interface IBurgerMenuNav {
@@ -82,20 +88,28 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
         </ul>
       </nav>
       <div>
-        <span>
+        <span onClick={() => openNewTab("https://github.com/erkanisuf")}>
           <AiFillGithub fontSize="7vw" />
         </span>
-        <span>
+        <span
+          onClick={() =>
+            openNewTab("https://www.linkedin.com/in/erkan-isuf-a25b21202/")
+          }
+        >
           {" "}
           <AiFillLinkedin fontSize="7vw" />
         </span>
-        <span>
+        <span onClick={() => openNewTab("mailto:erkanisuf@gmail.com")}>
           {" "}
           <SiGmail fontSize="7vw" />
         </span>
-        <span>
+        <span onClick={() => openNewTab("resume.pdf")}>
           {" "}
           <AiFillFilePdf fontSize="7vw" />
+        </span>
+        <span data-tip onClick={() => openNewTab("tel:+358503040519")}>
+          {" "}
+          <AiOutlineMobile fontSize="7vw" />
         </span>
       </div>
     </motion.div>
