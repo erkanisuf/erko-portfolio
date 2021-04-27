@@ -98,6 +98,12 @@
   font-weight: 800;
 }
 
+@media (max-width: 1300px) and (min-width: 1025px) {
+  .upperpanel p {
+    font-size: 1.5vw;
+  }
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .upperpanel {
     width: 75%;
@@ -387,6 +393,18 @@
   background: #f8f8fa;
   background: linear-gradient(178deg, #f8f8fa 0%, white 80%);
   padding: 55px 0px;
+}
+
+.mainContainer h4 {
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: #221e41;
+  cursor: pointer;
+}
+
+.mainContainer h4:hover {
+  text-decoration: underline;
 }
 
 .container {

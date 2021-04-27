@@ -3,8 +3,8 @@ import React from "react";
 import useWindowSize from "./useWindowSize";
 
 const MobileHeaderSVG = () => {
-  const [width] = useWindowSize();
-
+  const [width] = useWindowSize(); // checks if mobile or not
+  // Image SVG for mobile
   if (width > 1024) {
     return <p>Loading..</p>;
   } else

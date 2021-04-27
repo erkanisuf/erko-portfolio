@@ -30,12 +30,16 @@ $pinkViolet: rgb(255, 100, 203);
     justify-content: space-around;
     align-items: center;
     div {
+      flex: 1;
+      img {
+        width: 20%;
+      }
     }
     nav {
       display: flex;
       justify-content: flex-end;
 
-      flex: 1;
+      flex: 5;
       ul {
         width: 40%;
         display: flex;
@@ -57,9 +61,16 @@ $pinkViolet: rgb(255, 100, 203);
       }
     }
     @media (max-width: 1024px) {
-      display: none;
+      div {
+        img {
+          width: 10%;
+        }
+      }
+      nav {
+        display: none;
+      }
     }
-    @media (max-width: 1300px) and (min-width: 1025px) {
+    @media (max-width: 1500px) and (min-width: 1025px) {
       nav {
         ul {
           width: 80%;

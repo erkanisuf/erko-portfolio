@@ -151,6 +151,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   height: 50%;
+  overflow: hidden;
   color: white;
   font-weight: 800;
   display: flex;

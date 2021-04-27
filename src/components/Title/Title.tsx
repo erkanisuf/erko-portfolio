@@ -11,8 +11,9 @@ interface ITitle {
 type align = "flex-start" | "flex-end" | "center";
 const Title: React.FC<ITitle> = ({ smalltext, bigtext, alignItems }) => {
   const { ref, inView } = useInView({ initialInView: true, delay: 0 }); // checks if social media bar is in view or not
-  const startanimate = useAnimation();
+  const startanimate = useAnimation(); // motions function
 
+  //animation for the title
   const variants = {
     active: { opacity: 1, scale: 1 },
     inactive: { opacity: 0, scale: 0 },

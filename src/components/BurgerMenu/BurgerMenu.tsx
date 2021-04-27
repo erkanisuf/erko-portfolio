@@ -19,6 +19,7 @@ const BurgerMenu: React.FC<IBurgerMenu> = ({ active, activeLink }) => {
     },
     inactive: { rotateZ: 0, translateY: 0, translateX: 5 },
   };
+  // When its open it makes X
   const variantsBurge2 = {
     active: {
       rotateZ: -45,

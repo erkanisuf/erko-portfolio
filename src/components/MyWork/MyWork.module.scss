@@ -8,6 +8,17 @@
     rgba(255, 255, 255, 1) 80%
   );
   padding: 55px 0px;
+  h4 {
+    font-weight: 400;
+
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: $darkViolet;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .container {

@@ -2,6 +2,7 @@ import React from "react";
 import ReactTooltip from "react-tooltip";
 
 const Tooltip = () => {
+  //tooltip for the cards and btn to top
   return (
     <>
       {/*GitHubAndLink */}

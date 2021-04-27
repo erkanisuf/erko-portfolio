@@ -19,6 +19,7 @@ import Title from "../Title/Title";
 const AboutMe = () => {
   const { ref, inView } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
 
+  //About me text of <p> Animation
   const pAnime = {
     active: { opacity: 1 },
     inactive: { opacity: 0 },

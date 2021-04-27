@@ -17,7 +17,7 @@ const DesktopImage: React.FC<IDesktopImage> = ({
   title,
   livepreview,
 }) => {
-  const [width] = useWindowSize();
+  const [width] = useWindowSize(); // checks viewport
 
   return (
     <div
@@ -42,6 +42,7 @@ const DesktopImage: React.FC<IDesktopImage> = ({
           className={DesktopImageCSS.parralax}
         >
           <div
+            data-testid="desktopImageLink"
             className={DesktopImageCSS.cardImageWrapper}
             onClick={() => openNewTab(livepreview)}
           >

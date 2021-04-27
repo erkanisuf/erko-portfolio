@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 import { IoMicCircleOutline } from "react-icons/io5";
@@ -27,6 +26,7 @@ const CustomCursor = () => {
     };
   }, []);
 
+  //changes cursor style depending on what id container it has under the cursor
   const cursrosType = () => {
     switch (target) {
       case "letstalk":
@@ -37,19 +37,7 @@ const CustomCursor = () => {
             />
           </div>
         );
-      case "textaboutme":
-        return (
-          <motion.div
-            initial={{ borderRadius: 0 }}
-            animate={{ borderRadius: 100 }}
-            transition={{ duration: 0.5 }}
-            className={CustomCursorCSS.textCursor}
-            style={{
-              left: `${mouse.x - 15}px`,
-              top: `${mouse.y - 15}px`,
-            }}
-          ></motion.div>
-        );
+
       case "scrolldownid":
         return (
           <p
@@ -67,6 +55,7 @@ const CustomCursor = () => {
     }
   };
 
+  // for mobile doesnt render cursor  just in case if bugs happens
   if (width < 1200) {
     return <></>;
   } else

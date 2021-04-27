@@ -21,6 +21,7 @@ export const openNewTab = (e: string) => {
 };
 const SocialLinks: React.FC<ISocialLinks> = ({ inView, entry }) => {
   const controls = useAnimation(); //framer motion
+  // Animates social menu bar when its scorlled down it moves it to the side
   const variants = {
     active: { y: 500, x: 200 },
     inactive: {

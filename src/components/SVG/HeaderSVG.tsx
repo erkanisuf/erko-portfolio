@@ -1,12 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useWindowSize from "./useWindowSize";
+import { ImSpinner9 } from "react-icons/im";
 
 const HeaderSVG = () => {
   const [width] = useWindowSize();
-
+  // Image SVG desktop or tablets
   if (width < 1024) {
-    return <p>Loading..</p>;
+    return (
+      <div>
+        <ImSpinner9 />
+      </div>
+    );
   }
   return (
     <svg

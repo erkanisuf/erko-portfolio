@@ -35,8 +35,9 @@ const Cards: React.FC<ICards> = ({
 }) => {
   const [device, setDevice] = useState<string>("desktop");
   const { ref, inView } = useInView({ initialInView: true, delay: 0 }); // checks if social media bar is in view or not
-  const startanimate = useAnimation();
+  const startanimate = useAnimation(); // framer motions function
 
+  // animates card when scrolled view is true
   const variants = {
     active: { opacity: 1 },
     inactive: { opacity: 0 },
@@ -51,6 +52,7 @@ const Cards: React.FC<ICards> = ({
     return () => {};
   }, [inView, startanimate]);
 
+  //User can choose diffrent viewport . When state changes the image gets changed too
   const typeOfImage = () => {
     switch (device) {
       case "desktop":

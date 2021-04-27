@@ -74,7 +74,7 @@ const Header = () => {
               whileHover={{
                 scale: 1.1,
               }}
-              transition={{ duration: 0.1 }}
+              transition={{ delay: 2 }}
               variants={item}
               onClick={() => (window.location.href = "#contactme")}
             >

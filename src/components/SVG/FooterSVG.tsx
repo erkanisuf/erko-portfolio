@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 const FooterSVG = () => {
+  //Image for footer but this stage planned to not use it
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

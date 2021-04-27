@@ -22,7 +22,7 @@ const BurgerMenuNav: React.FC<IBurgerMenuNav> = ({
   activeLink,
   setToggle,
 }) => {
-  //animation to show the nav for mobiles
+  //animation to show the navigation  for mobiles
   const variantsMobileMenu = {
     active: {
       opacity: 1,

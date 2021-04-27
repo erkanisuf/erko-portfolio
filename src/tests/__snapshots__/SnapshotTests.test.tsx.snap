@@ -1,0 +1,4566 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Tests for components Snapshot <AboutMe/> 1`] = `
+<div
+  className="containerAboutMe"
+  id="aboutme"
+>
+  <div
+    className="upperpanel"
+  >
+    <Title
+      alignItems="flex-start"
+      bigtext="Me"
+      smalltext="About"
+    />
+    <div>
+      <t
+        flipHorizontally={false}
+        flipVertically={false}
+        glareBorderRadius="0"
+        glareColor="#ffffff"
+        glareEnable={false}
+        glareMaxOpacity={0.7}
+        glarePosition="bottom"
+        glareReverse={false}
+        gyroscope={false}
+        perspective={1000}
+        reset={true}
+        scale={1}
+        tiltAngleXInitial={0}
+        tiltAngleXManual={null}
+        tiltAngleYInitial={0}
+        tiltAngleYManual={null}
+        tiltAxis={null}
+        tiltEnable={true}
+        tiltMaxAngleX={20}
+        tiltMaxAngleY={20}
+        tiltReverse={false}
+        trackOnWindow={false}
+        transitionEasing="cubic-bezier(.03,.98,.52,.99)"
+        transitionSpeed={400}
+      >
+        <div
+          className="imgDiv"
+        >
+          <img
+            alt=""
+            src="https://images0.westend61.de/0000929638pw/portrait-of-confident-young-businessman-DIGF04093.jpg"
+          />
+        </div>
+      </t>
+      <ForwardRef(MotionComponent)
+        animate="active"
+        id="textaboutme"
+        initial={
+          Object {
+            "opacity": 0,
+          }
+        }
+        transition={
+          Object {
+            "duration": 0.5,
+          }
+        }
+        variants={
+          Object {
+            "active": Object {
+              "opacity": 1,
+            },
+            "inactive": Object {
+              "opacity": 0,
+            },
+          }
+        }
+        whileHover={
+          Object {
+            "scale": 1.09,
+          }
+        }
+      >
+        I am Erko and I am a passionate front-end developer. I love to use new technologies to build amazing products and solve different issues with the help of tech. I enjoy mostly the front end, however I also got experience with back-end technologies. Would love hear from you job opportunities, projects or a volunteer work. Lets create amazing products together!
+      </ForwardRef(MotionComponent)>
+    </div>
+  </div>
+  <div
+    className="bottompanel"
+    id="myskills"
+  >
+    <Title
+      alignItems="flex-start"
+      bigtext="Skills"
+      smalltext="Technical"
+    />
+    <h3>
+      Frontend
+    </h3>
+    <div
+      className="frontEnd"
+    >
+      <div>
+        <FaReact />
+         
+        <p>
+          React
+        </p>
+      </div>
+      <div>
+        <SiTypescript />
+         
+        <p>
+          Typescript
+        </p>
+      </div>
+      <div>
+        <AiFillHtml5 />
+        <p>
+           HTML
+        </p>
+      </div>
+      <div>
+        <ImCss3 />
+        <p>
+           CSS
+        </p>
+      </div>
+    </div>
+    <MobileSkills />
+    <div
+      className="skills"
+    >
+      <div>
+        <h3>
+          Backend
+        </h3>
+        <div>
+          <GrNode />
+           
+          <p>
+            NodeJS
+          </p>
+        </div>
+        <div>
+          <SiDotNet
+            style={
+              Object {
+                "backgroundColor": "#665f82",
+                "color": "white",
+                "padding": "0px 5px",
+              }
+            }
+          />
+           
+          <p>
+            .NetCore
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3>
+          Database
+        </h3>
+        <div>
+          <SiPostgresql />
+           
+          <p>
+            Postgresql
+          </p>
+        </div>
+        <div>
+          <SiMongodb />
+           
+          <p>
+            Mongo
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3>
+          Tests
+        </h3>
+        <div>
+          <SiJest />
+           
+          <p>
+            Jest
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <BurgerMenu/> 1`] = `
+<Fragment>
+  <div
+    className="burger"
+    onClick={[Function]}
+  >
+    <ForwardRef(MotionComponent)
+      animate="inactive"
+      transition={
+        Object {
+          "duration": 0.5,
+        }
+      }
+      variants={
+        Object {
+          "active": Object {
+            "rotateZ": 45,
+            "translateX": 0,
+            "translateY": 5,
+          },
+          "inactive": Object {
+            "rotateZ": 0,
+            "translateX": 5,
+            "translateY": 0,
+          },
+        }
+      }
+    />
+    <ForwardRef(MotionComponent)
+      animate="inactive"
+      transition={
+        Object {
+          "duration": 0.5,
+        }
+      }
+      variants={
+        Object {
+          "active": Object {
+            "rotateZ": -45,
+          },
+          "inactive": Object {
+            "rotateZ": 0,
+            "translateY": 0,
+          },
+        }
+      }
+    />
+  </div>
+  <BurgerMenuNav
+    active="mywork"
+    activeLink=""
+    setToggle={[Function]}
+    toggle={false}
+  />
+</Fragment>
+`;
+
+exports[`Snapshot Tests for components Snapshot <BurgerMenuNav/> 1`] = `
+<div
+  className="mobileMenu"
+  style={Object {}}
+>
+  <nav
+    className="mobileNav"
+  >
+    <ul>
+      <li>
+        <a
+          className=""
+          data-testid="mobilemywork"
+          href="#mywork"
+          onClick={[Function]}
+        >
+           
+          My work
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          data-testid="mobilemyskills"
+          href="#myskills"
+          onClick={[Function]}
+        >
+          My skills
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          data-testid="mobileaboutme"
+          href="#aboutme"
+          onClick={[Function]}
+        >
+          About Me
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          data-testid="mobilecontactme"
+          href="#contactme"
+          onClick={[Function]}
+        >
+          Contact me
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <span
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        fontSize="7vw"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+        />
+      </svg>
+    </span>
+    <span
+      onClick={[Function]}
+    >
+       
+      <svg
+        fill="currentColor"
+        fontSize="7vw"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+        />
+      </svg>
+    </span>
+    <span
+      onClick={[Function]}
+    >
+       
+      <svg
+        fill="currentColor"
+        fontSize="7vw"
+        height="1em"
+        role="img"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title />
+        <path
+          d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"
+        />
+      </svg>
+    </span>
+    <span
+      onClick={[Function]}
+    >
+       
+      <svg
+        fill="currentColor"
+        fontSize="7vw"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M854.6 288.7c6 6 9.4 14.1 9.4 22.6V928c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h424.7c8.5 0 16.7 3.4 22.7 9.4l215.2 215.3zM790.2 326L602 137.8V326h188.2zM633.22 637.26c-15.18-.5-31.32.67-49.65 2.96-24.3-14.99-40.66-35.58-52.28-65.83l1.07-4.38 1.24-5.18c4.3-18.13 6.61-31.36 7.3-44.7.52-10.07-.04-19.36-1.83-27.97-3.3-18.59-16.45-29.46-33.02-30.13-15.45-.63-29.65 8-33.28 21.37-5.91 21.62-2.45 50.07 10.08 98.59-15.96 38.05-37.05 82.66-51.2 107.54-18.89 9.74-33.6 18.6-45.96 28.42-16.3 12.97-26.48 26.3-29.28 40.3-1.36 6.49.69 14.97 5.36 21.92 5.3 7.88 13.28 13 22.85 13.74 24.15 1.87 53.83-23.03 86.6-79.26 3.29-1.1 6.77-2.26 11.02-3.7l11.9-4.02c7.53-2.54 12.99-4.36 18.39-6.11 23.4-7.62 41.1-12.43 57.2-15.17 27.98 14.98 60.32 24.8 82.1 24.8 17.98 0 30.13-9.32 34.52-23.99 3.85-12.88.8-27.82-7.48-36.08-8.56-8.41-24.3-12.43-45.65-13.12zM385.23 765.68v-.36l.13-.34a54.86 54.86 0 0 1 5.6-10.76c4.28-6.58 10.17-13.5 17.47-20.87 3.92-3.95 8-7.8 12.79-12.12 1.07-.96 7.91-7.05 9.19-8.25l11.17-10.4-8.12 12.93c-12.32 19.64-23.46 33.78-33 43-3.51 3.4-6.6 5.9-9.1 7.51a16.43 16.43 0 0 1-2.61 1.42c-.41.17-.77.27-1.13.3a2.2 2.2 0 0 1-1.12-.15 2.07 2.07 0 0 1-1.27-1.91zM511.17 547.4l-2.26 4-1.4-4.38c-3.1-9.83-5.38-24.64-6.01-38-.72-15.2.49-24.32 5.29-24.32 6.74 0 9.83 10.8 10.07 27.05.22 14.28-2.03 29.14-5.7 35.65zm-5.81 58.46l1.53-4.05 2.09 3.8c11.69 21.24 26.86 38.96 43.54 51.31l3.6 2.66-4.39.9c-16.33 3.38-31.54 8.46-52.34 16.85 2.17-.88-21.62 8.86-27.64 11.17l-5.25 2.01 2.8-4.88c12.35-21.5 23.76-47.32 36.05-79.77zm157.62 76.26c-7.86 3.1-24.78.33-54.57-12.39l-7.56-3.22 8.2-.6c23.3-1.73 39.8-.45 49.42 3.07 4.1 1.5 6.83 3.39 8.04 5.55a4.64 4.64 0 0 1-1.36 6.31 6.7 6.7 0 0 1-2.17 1.28z"
+        />
+      </svg>
+    </span>
+    <span
+      data-tip={true}
+      onClick={[Function]}
+    >
+       
+      <svg
+        fill="currentColor"
+        fontSize="7vw"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <Cards/> 1`] = `
+<div
+  className="cardContainer"
+  style={
+    Object {
+      "backgroundColor": "#0f73ff",
+      "backgroundImage": "url(\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.5'%3E%3Cpath fill='%23254763' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23285c88' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%232872ae' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%232389d6' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%2312a0ff' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%2333b1ff' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%2344c2ff' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%2350d3ff' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%235ae5ff' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%2361f7ff' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E\\")",
+      "opacity": 0,
+    }
+  }
+>
+  <div
+    className="itemContainer"
+  >
+    <div
+      className="cardText"
+    >
+      <div>
+        <h2
+          onClick={[Function]}
+        >
+          Helsinki Guide
+        </h2>
+        <h3>
+          City guide with places and activities in Helsinki
+        </h3>
+      </div>
+      <div
+        className="description"
+      />
+      <div
+        className="stackUsed"
+      >
+        <div>
+          React
+        </div>
+        <div>
+          Typescript
+        </div>
+        <div>
+          .Net
+        </div>
+        <div>
+          MSSQL Azure
+        </div>
+      </div>
+    </div>
+    <div
+      className="rightOrder"
+    >
+      <div
+        className="rightOrder"
+      >
+        <div
+          style={Object {}}
+        >
+          <div
+            className="parralax"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseMove={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+          >
+            <div
+              className="cardImageWrapper"
+              data-testid="desktopImageLink"
+              onClick={[Function]}
+            >
+              <img
+                alt="Helsinki Guide"
+                id="projectcard"
+                src=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="deviceRight"
+  >
+    <div>
+      <svg
+        data-for="mobile"
+        data-tip={true}
+        fill="currentColor"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+        />
+      </svg>
+      <svg
+        data-for="tablet"
+        data-tip={true}
+        fill="currentColor"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "",
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M800 64H224c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h576c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zm-8 824H232V136h560v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+        />
+      </svg>
+      <svg
+        data-for="desktop"
+        data-tip={true}
+        fill="currentColor"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="none"
+          height="304"
+          rx="32.14"
+          ry="32.14"
+          strokeLinejoin="round"
+          strokeWidth="32"
+          width="416"
+          x="48"
+          y="96"
+        />
+        <path
+          d="M16 416h480"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          strokeWidth="32"
+        />
+      </svg>
+    </div>
+    <div>
+      <svg
+        data-for="githubcode"
+        data-tip={true}
+        fill="currentColor"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+        />
+      </svg>
+      <svg
+        data-for="livepreview"
+        data-tip={true}
+        fill="currentColor"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <CustomCursor/> 1`] = `null`;
+
+exports[`Snapshot Tests for components Snapshot <DesktopImage/> 1`] = `
+<div
+  className="rightOrder"
+>
+  <div
+    style={Object {}}
+  >
+    <div
+      className="parralax"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="cardImageWrapper"
+        data-testid="desktopImageLink"
+        onClick={[Function]}
+      >
+        <img
+          alt="Helsinki Guide"
+          id="projectcard"
+          src=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <Footer/> 1`] = `
+<footer
+  className="container"
+  id="contactme"
+>
+  <div
+    className="buildTogether"
+  >
+    <h1>
+      Interested in collaboration ?
+    </h1>
+    <h2>
+       Leave me a message and lets have a chat!
+    </h2>
+  </div>
+  <div
+    className="lightContainer"
+  >
+    <div
+      className="itemsContainer"
+    >
+      <div
+        className="contact"
+      >
+        <h3>
+          Contact Me
+        </h3>
+        <span
+          onClick={[Function]}
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+            />
+          </svg>
+            
+          +358 50 30 40 519
+        </span>
+        <span
+          onClick={[Function]}
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"
+            />
+          </svg>
+            
+          erkanisuf@gmail.com
+        </span>
+        <span>
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 576 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+            />
+          </svg>
+          Helsinki, Finland
+        </span>
+        <span />
+      </div>
+      <div
+        className="disableonMobile"
+      >
+        <h3>
+          Site map
+        </h3>
+        <nav
+          className="footernav"
+        >
+          <ul>
+            <li>
+              <a
+                data-testid="footermywork"
+                href="#mywork"
+              >
+                 
+                My work
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="footermyskills"
+                href="#myskills"
+              >
+                My skills
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="footeraboutme"
+                href="#aboutme"
+              >
+                About Me
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="footercontactme"
+                href="#contactme"
+              >
+                Contact me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div
+      className="copyright"
+    >
+      2021© Erkan Isuf. All rights reserved.
+      <br />
+      Created with React.
+    </div>
+  </div>
+</footer>
+`;
+
+exports[`Snapshot Tests for components Snapshot <Header/> 1`] = `
+<div
+  className="mainContainer"
+>
+  <ForwardRef(MotionComponent)
+    animate={
+      Object {
+        "x": 0,
+      }
+    }
+    className="leftWrapper"
+    initial={
+      Object {
+        "x": -1000,
+      }
+    }
+    transition={
+      Object {
+        "x": Object {
+          "stiffness": 50,
+          "type": "spring",
+        },
+      }
+    }
+  >
+    <BurgerMenu
+      active=""
+      activeLink={[Function]}
+    />
+    <Navigation
+      active=""
+      activeLink={[Function]}
+    />
+    <ForwardRef(MotionComponent)
+      animate={
+        Object {
+          "opacity": 1,
+          "x": 0,
+        }
+      }
+      className="lightWrapper"
+      initial={
+        Object {
+          "opacity": 0,
+          "x": 1000,
+        }
+      }
+      transition={
+        Object {
+          "delay": 0.5,
+        }
+      }
+    >
+      <ForwardRef(MotionComponent)
+        animate="show"
+        initial="hidden"
+        variants={
+          Object {
+            "hidden": Object {
+              "opacity": 0,
+            },
+            "show": Object {
+              "opacity": 1,
+              "transition": Object {
+                "delay": 1.2,
+                "staggerChildren": 1.5,
+              },
+            },
+          }
+        }
+      >
+        <ForwardRef(MotionComponent)
+          variants={
+            Object {
+              "hidden": Object {
+                "opacity": 0,
+              },
+              "show": Object {
+                "opacity": 1,
+              },
+            }
+          }
+        >
+          Erkan Isuf
+        </ForwardRef(MotionComponent)>
+        <ForwardRef(MotionComponent)
+          variants={
+            Object {
+              "hidden": Object {
+                "opacity": 0,
+              },
+              "show": Object {
+                "opacity": 1,
+              },
+            }
+          }
+        >
+          Front end developer
+        </ForwardRef(MotionComponent)>
+        <ForwardRef(MotionComponent)
+          data-testid="btnletstalk"
+          id="letstalk"
+          onClick={[Function]}
+          transition={
+            Object {
+              "delay": 2,
+            }
+          }
+          variants={
+            Object {
+              "hidden": Object {
+                "opacity": 0,
+              },
+              "show": Object {
+                "opacity": 1,
+              },
+            }
+          }
+          whileHover={
+            Object {
+              "scale": 1.1,
+            }
+          }
+        >
+          LET\`S TALK!
+        </ForwardRef(MotionComponent)>
+      </ForwardRef(MotionComponent)>
+      <div
+        className="mobilHeaderSVG"
+      >
+        <MobileHeaderSVG />
+      </div>
+    </ForwardRef(MotionComponent)>
+  </ForwardRef(MotionComponent)>
+  <div
+    className="rightWrapper"
+  >
+    <div
+      className="triggerSocialAnime"
+    />
+    <SocialLinks
+      inView={true}
+    />
+    <HeaderSVG />
+  </div>
+  <ForwardRef(MotionComponent)
+    animate={
+      Object {
+        "opacity": 0,
+      }
+    }
+    className="showArrowUp"
+    data-testid="backtotop"
+    onClick={[Function]}
+    transition={
+      Object {
+        "stiffness": 500,
+        "type": "spring",
+      }
+    }
+    whileHover={
+      Object {
+        "scale": 1.3,
+      }
+    }
+  >
+    <MdKeyboardArrowUp
+      color="white"
+      data-for="backtotop"
+      data-tip={true}
+    />
+  </ForwardRef(MotionComponent)>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <HeaderSVG/> 1`] = `
+<svg
+  data-name="Layer 1"
+  height="550.804"
+  style={
+    Object {
+      "marginLeft": "-200px",
+      "transform": "scaleX(-1)",
+    }
+  }
+  viewBox="0 0 773.114 610.804"
+  width="750.114"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M309.473 12.711H773.114V232.717H309.473z"
+    data-name="Rectangle 62"
+    fill="#e6e6e6"
+    style={Object {}}
+  />
+  <path
+    d="M322.731 31.577H759.857V215.135H322.731z"
+    data-name="Rectangle 75"
+    fill="#fff"
+  />
+  <path
+    className="topestBar"
+    d="M309.276 0H772.917V19.697H309.276z"
+    data-name="Rectangle 80"
+    fill="#221e41"
+  />
+  <circle
+    cx="323.913"
+    cy="11.582"
+    data-name="Ellipse 90"
+    fill="#fff"
+    r="3.651"
+  />
+  <circle
+    cx="337.77"
+    cy="11.582"
+    data-name="Ellipse 91"
+    fill="#fff"
+    r="3.651"
+  />
+  <circle
+    cx="351.627"
+    cy="11.582"
+    data-name="Ellipse 92"
+    fill="#fff"
+    r="3.651"
+  />
+  <path
+    d="M584.272 61.279H656.9480000000001V185.434H584.272z"
+    fill="#f2f2f2"
+  />
+  <path
+    className="firstDiv"
+    d="M425.64 61.277H572.23V95.452H425.64z"
+    fill="#221e41"
+    style={Object {}}
+  />
+  <path
+    d="M425.64 104.969H572.23V141.74H425.64z"
+    fill="#f2f2f2"
+    style={Object {}}
+  />
+  <path
+    d="M425.64 151.257H572.23V185.43200000000002H425.64z"
+    fill="#f2f2f2"
+  />
+  <path
+    className="backHand"
+    d="M434.646 511.7a17.867 17.867 0 00-19.79-17.863 17.202 17.202 0 00-2.348.433l-60.464-51.827 3.613-19.476-29.801-9.658-8.986 31.21a18.103 18.103 0 007.68 20.205l74.382 47.045a17.068 17.068 0 00.091 1.751 17.867 17.867 0 0021.691 15.502 17.382 17.382 0 002.105-.608 17.92 17.92 0 0011.827-16.714z"
+    fill="#e08d99"
+    style={Object {}}
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M284.325 571.807h77.958c0 2.241 80.345 4.06 80.345 4.06a20.884 20.884 0 013.426 3.247 20.152 20.152 0 014.71 12.99v3.248a20.305 20.305 0 01-20.298 20.298H284.325a20.315 20.315 0 01-20.298-20.298v-3.247a20.326 20.326 0 0120.298-20.298z"
+    fill="#3f3d56"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M134.573 470.245H155.68200000000002V606.644H134.573z"
+    fill="#3f3d56"
+  />
+  <path
+    d="M429.206 752.939c0 2.554-31.988.988-71.447.988s-71.447 1.566-71.447-.988 31.987-22.806 71.447-22.806 71.447 20.252 71.447 22.806z"
+    fill="#3f3d56"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    className="backLeg"
+    d="M196.707 589.916L216.613 589.914 226.084 538.282 196.703 538.284 196.707 589.916z"
+    fill="#e08d99"
+  />
+  <path
+    d="M405.072 753.81l64.19-.002v-.812a24.984 24.984 0 00-24.984-24.984h-.003l-39.204.002z"
+    fill="#2f2e41"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M439.924 702.496l39.687-88.997a32.616 32.616 0 00-14.32-41.868l-86.083-46.16-39.281-3.342-36.235-3.293-.26.442c-.335.565-8.126 14.021-2.86 28.776 3.995 11.193 14.385 19.935 30.883 25.984 38.507 14.12 82.99 26.187 100.329 30.72a5.604 5.604 0 013.59 2.857 5.68 5.68 0 01.319 4.545l-36.87 82.837a7.307 7.307 0 006.185 9.79l27.55 2.006q.35.034.698.034a7.302 7.302 0 006.668-4.331z"
+    fill="#cbcbcb"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    className="frontLeg"
+    d="M183.716 589.916L203.622 589.914 213.094 538.282 183.713 538.284 183.716 589.916z"
+    fill="#e08d99"
+  />
+  <path
+    d="M392.082 753.81l64.19-.002v-.812a24.984 24.984 0 00-24.984-24.984h-.003l-39.204.002z"
+    fill="#2f2e41"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M425.31 707.367l39.687-88.996a32.616 32.616 0 00-14.32-41.868l-86.083-46.161L325.313 527l-28.38-2.462.003-.39c-.334.565-8.125 14.022-2.859 28.777 3.995 11.192 6.266 19.934 22.764 25.984 38.507 14.12 82.99 26.187 100.328 30.719a5.604 5.604 0 013.591 2.857 5.68 5.68 0 01.319 4.545l-36.871 82.837a7.307 7.307 0 006.186 9.79l27.55 2.007q.35.033.698.033a7.302 7.302 0 006.668-4.33z"
+    fill="#cbcbcb"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M350.517 526.163c1.903-1.346 29.229 12.99 34.1 1.623-22.733-56.832-7.067-81.374-20.993-113.965a40.581 40.581 0 00-26.9-23.025l-36.13-1.823-.187.09a42.227 42.227 0 00-23.089 44.798c.129 35.469 21.35 62.52 13.93 88.247a8.317 8.317 0 00.786 6.468 7.93 7.93 0 005.06 3.75l47.704-6.364a8.061 8.061 0 006.522-1.262z"
+    fill="#2f2e41"
+    transform="translate(-213.443 -144.598)"
+  />
+  <circle
+    className="head"
+    cx="99.209"
+    cy="190.998"
+    fill="#e08d99"
+    r="39.882"
+    style={Object {}}
+  />
+  <path
+    className="hair"
+    d="M299.948 372.203c2.12.927 6.459-15.958 4.515-19.335-2.89-5.022-2.72-4.986-4.639-8.309s-2.348-7.87.137-10.794 8.236-2.536 9.37 1.13c-.73-6.963 6.157-12.56 12.979-14.132s14.017-.596 20.876-1.996c7.96-1.624 16.243-8.297 13.067-17.051a12.33 12.33 0 00-2.405-3.953c-3.67-4.126-8.803-5.887-13.822-7.59-10.44-3.545-21.167-7.133-32.187-6.742-18.105.643-35.22 13.159-41.32 30.218a42.473 42.473 0 00-1.758 6.536c-3.783 20.337 8.027 40.397 27.208 48.141z"
+    fill="#2f2e41"
+    style={Object {}}
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M509.097 436.337l4.574 27.156a1.672 1.672 0 01-.097.898l-35.88 89.654a1.672 1.672 0 01-3.222-.55l-1.52-36.028a1.672 1.672 0 01.121-.7l32.827-80.782a1.672 1.672 0 013.197.352z"
+    fill="#3f3d56"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M293.114 293.823L297.46 317.153 265.619 398.964 261.485 372.647 293.114 293.823z"
+    fill="#221e41"
+  />
+  <path
+    d="M367.247 553.628c.784 3.058 103.64 6.368 104.707 5.443a21.674 21.674 0 002.474-3.827 150.42 150.42 0 002.076-3.856l-1.69-32.53-101.322-10.827s-4.482 27.145-5.89 39.617a29.957 29.957 0 00-.355 5.98z"
+    fill="#3f3d56"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M248.114 377.702L248.123 405.727 203.309 402.541 205.292 374.657 248.114 377.702z"
+    opacity="0.1"
+    style={
+      Object {
+        "isolation": "isolate",
+      }
+    }
+  />
+  <path
+    d="M189.717 382.557L189.988 382.523 187.872 394.437 162.975 392.667 163.825 380.716 189.717 382.557z"
+    opacity="0.1"
+    style={
+      Object {
+        "isolation": "isolate",
+      }
+    }
+  />
+  <path
+    d="M367.247 553.628c.784 3.058 103.64 6.368 104.707 5.443a21.674 21.674 0 002.474-3.827l-106.826-7.596a29.957 29.957 0 00-.355 5.98z"
+    opacity="0.1"
+    style={
+      Object {
+        "isolation": "isolate",
+      }
+    }
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    className="frontHand"
+    d="M325.946 505.051l86.764 16.192a17.078 17.078 0 00.734 1.594 17.906 17.906 0 0011.491 8.972 17.72 17.72 0 0014.399-2.608 17.864 17.864 0 00-18.475-30.512 17.168 17.168 0 00-2.02 1.272l-75.361-25.744-3.857-19.43-31.26 2.069 3.24 32.57a17.767 17.767 0 0014.345 15.625z"
+    fill="#e08d99"
+    style={Object {}}
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M307.302 471.383l45.423-14.929-10.596-30.423a18.135 18.135 0 00-20.107-11.923 18.135 18.135 0 00-15.153 18.089z"
+    fill="#2f2e41"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M743.65 723.895c18.274 9.458 26.398 30.05 26.398 30.05s-21.503 5.257-39.776-4.2-26.399-30.049-26.399-30.049 21.503-5.258 39.777 4.2z"
+    fill="rgb(255, 100, 203)"
+    id="scrolldownid"
+    style={Object {}}
+    transform="translate(-83.443 -144.598)"
+  />
+  <path
+    d="M737.806 730.708c10.905 17.448 32.086 23.88 32.086 23.88s3.501-21.857-7.403-39.306-32.086-23.88-32.086-23.88-3.502 21.857 7.403 39.306z"
+    fill="rgb(255, 100, 203)"
+    id="scrolldownid"
+    style={Object {}}
+    transform="translate(-83.443 -144.598)"
+  />
+</svg>
+`;
+
+exports[`Snapshot Tests for components Snapshot <MobileHeaderSVG/> 1`] = `
+<svg
+  data-name="Layer 1"
+  height="100%"
+  style={
+    Object {
+      "transform": "scaleX(-1)",
+    }
+  }
+  viewBox="0 0 773.114 610.804"
+  width="100%"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M309.473 12.711H773.114V232.717H309.473z"
+    data-name="Rectangle 62"
+    fill="#221e41"
+  />
+  <path
+    d="M322.731 31.577H759.857V215.135H322.731z"
+    data-name="Rectangle 75"
+    fill="#fff"
+  />
+  <path
+    className="topestBar"
+    d="M309.276 0H772.917V19.697H309.276z"
+    data-name="Rectangle 80"
+    fill="#221e41"
+  />
+  <circle
+    cx="323.913"
+    cy="11.582"
+    data-name="Ellipse 90"
+    fill="#fff"
+    r="3.651"
+  />
+  <circle
+    cx="337.77"
+    cy="11.582"
+    data-name="Ellipse 91"
+    fill="#fff"
+    r="3.651"
+  />
+  <circle
+    cx="351.627"
+    cy="11.582"
+    data-name="Ellipse 92"
+    fill="#fff"
+    r="3.651"
+  />
+  <path
+    d="M584.272 61.279H656.9480000000001V185.434H584.272z"
+    fill="#f2f2f2"
+  />
+  <path
+    className="firstDiv"
+    d="M425.64 61.277H572.23V95.452H425.64z"
+    fill="#221e41"
+    style={Object {}}
+  />
+  <path
+    d="M425.64 104.969H572.23V141.74H425.64z"
+    fill="#f2f2f2"
+    style={Object {}}
+  />
+  <path
+    d="M425.64 151.257H572.23V185.43200000000002H425.64z"
+    fill="#f2f2f2"
+  />
+  <path
+    className="backHand"
+    d="M434.646 511.7a17.867 17.867 0 00-19.79-17.863 17.202 17.202 0 00-2.348.433l-60.464-51.827 3.613-19.476-29.801-9.658-8.986 31.21a18.103 18.103 0 007.68 20.205l74.382 47.045a17.068 17.068 0 00.091 1.751 17.867 17.867 0 0021.691 15.502 17.382 17.382 0 002.105-.608 17.92 17.92 0 0011.827-16.714z"
+    fill="#e08d99"
+    style={Object {}}
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M284.325 571.807h77.958c0 2.241 80.345 4.06 80.345 4.06a20.884 20.884 0 013.426 3.247 20.152 20.152 0 014.71 12.99v3.248a20.305 20.305 0 01-20.298 20.298H284.325a20.315 20.315 0 01-20.298-20.298v-3.247a20.326 20.326 0 0120.298-20.298z"
+    fill="#3f3d56"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M134.573 470.245H155.68200000000002V606.644H134.573z"
+    fill="#3f3d56"
+  />
+  <path
+    d="M429.206 752.939c0 2.554-31.988.988-71.447.988s-71.447 1.566-71.447-.988 31.987-22.806 71.447-22.806 71.447 20.252 71.447 22.806z"
+    fill="#3f3d56"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    className="backLeg"
+    d="M196.707 589.916L216.613 589.914 226.084 538.282 196.703 538.284 196.707 589.916z"
+    fill="#e08d99"
+  />
+  <path
+    d="M405.072 753.81l64.19-.002v-.812a24.984 24.984 0 00-24.984-24.984h-.003l-39.204.002z"
+    fill="#2f2e41"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M439.924 702.496l39.687-88.997a32.616 32.616 0 00-14.32-41.868l-86.083-46.16-39.281-3.342-36.235-3.293-.26.442c-.335.565-8.126 14.021-2.86 28.776 3.995 11.193 14.385 19.935 30.883 25.984 38.507 14.12 82.99 26.187 100.329 30.72a5.604 5.604 0 013.59 2.857 5.68 5.68 0 01.319 4.545l-36.87 82.837a7.307 7.307 0 006.185 9.79l27.55 2.006q.35.034.698.034a7.302 7.302 0 006.668-4.331z"
+    fill="#cbcbcb"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    className="frontLeg"
+    d="M183.716 589.916L203.622 589.914 213.094 538.282 183.713 538.284 183.716 589.916z"
+    fill="#e08d99"
+  />
+  <path
+    d="M392.082 753.81l64.19-.002v-.812a24.984 24.984 0 00-24.984-24.984h-.003l-39.204.002z"
+    fill="#2f2e41"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M425.31 707.367l39.687-88.996a32.616 32.616 0 00-14.32-41.868l-86.083-46.161L325.313 527l-28.38-2.462.003-.39c-.334.565-8.125 14.022-2.859 28.777 3.995 11.192 6.266 19.934 22.764 25.984 38.507 14.12 82.99 26.187 100.328 30.719a5.604 5.604 0 013.591 2.857 5.68 5.68 0 01.319 4.545l-36.871 82.837a7.307 7.307 0 006.186 9.79l27.55 2.007q.35.033.698.033a7.302 7.302 0 006.668-4.33z"
+    fill="#cbcbcb"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M350.517 526.163c1.903-1.346 29.229 12.99 34.1 1.623-22.733-56.832-7.067-81.374-20.993-113.965a40.581 40.581 0 00-26.9-23.025l-36.13-1.823-.187.09a42.227 42.227 0 00-23.089 44.798c.129 35.469 21.35 62.52 13.93 88.247a8.317 8.317 0 00.786 6.468 7.93 7.93 0 005.06 3.75l47.704-6.364a8.061 8.061 0 006.522-1.262z"
+    fill="#2f2e41"
+    transform="translate(-213.443 -144.598)"
+  />
+  <circle
+    className="head"
+    cx="99.209"
+    cy="190.998"
+    fill="#e08d99"
+    r="39.882"
+    style={Object {}}
+  />
+  <path
+    d="M299.948 372.203c2.12.927 6.459-15.958 4.515-19.335-2.89-5.022-2.72-4.986-4.639-8.309s-2.348-7.87.137-10.794 8.236-2.536 9.37 1.13c-.73-6.963 6.157-12.56 12.979-14.132s14.017-.596 20.876-1.996c7.96-1.624 16.243-8.297 13.067-17.051a12.33 12.33 0 00-2.405-3.953c-3.67-4.126-8.803-5.887-13.822-7.59-10.44-3.545-21.167-7.133-32.187-6.742-18.105.643-35.22 13.159-41.32 30.218a42.473 42.473 0 00-1.758 6.536c-3.783 20.337 8.027 40.397 27.208 48.141z"
+    fill="#2f2e41"
+    style={Object {}}
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M509.097 436.337l4.574 27.156a1.672 1.672 0 01-.097.898l-35.88 89.654a1.672 1.672 0 01-3.222-.55l-1.52-36.028a1.672 1.672 0 01.121-.7l32.827-80.782a1.672 1.672 0 013.197.352z"
+    fill="#3f3d56"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M293.114 293.823L297.46 317.153 265.619 398.964 261.485 372.647 293.114 293.823z"
+    fill="#221e41"
+  />
+  <path
+    d="M367.247 553.628c.784 3.058 103.64 6.368 104.707 5.443a21.674 21.674 0 002.474-3.827 150.42 150.42 0 002.076-3.856l-1.69-32.53-101.322-10.827s-4.482 27.145-5.89 39.617a29.957 29.957 0 00-.355 5.98z"
+    fill="#3f3d56"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M248.114 377.702L248.123 405.727 203.309 402.541 205.292 374.657 248.114 377.702z"
+    opacity="0.1"
+    style={
+      Object {
+        "isolation": "isolate",
+      }
+    }
+  />
+  <path
+    d="M189.717 382.557L189.988 382.523 187.872 394.437 162.975 392.667 163.825 380.716 189.717 382.557z"
+    opacity="0.1"
+    style={
+      Object {
+        "isolation": "isolate",
+      }
+    }
+  />
+  <path
+    d="M367.247 553.628c.784 3.058 103.64 6.368 104.707 5.443a21.674 21.674 0 002.474-3.827l-106.826-7.596a29.957 29.957 0 00-.355 5.98z"
+    opacity="0.1"
+    style={
+      Object {
+        "isolation": "isolate",
+      }
+    }
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    className="frontHand"
+    d="M325.946 505.051l86.764 16.192a17.078 17.078 0 00.734 1.594 17.906 17.906 0 0011.491 8.972 17.72 17.72 0 0014.399-2.608 17.864 17.864 0 00-18.475-30.512 17.168 17.168 0 00-2.02 1.272l-75.361-25.744-3.857-19.43-31.26 2.069 3.24 32.57a17.767 17.767 0 0014.345 15.625z"
+    fill="#e08d99"
+    style={Object {}}
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M307.302 471.383l45.423-14.929-10.596-30.423a18.135 18.135 0 00-20.107-11.923 18.135 18.135 0 00-15.153 18.089z"
+    fill="#2f2e41"
+    transform="translate(-213.443 -144.598)"
+  />
+  <path
+    d="M743.65 723.895c18.274 9.458 26.398 30.05 26.398 30.05s-21.503 5.257-39.776-4.2-26.399-30.049-26.399-30.049 21.503-5.258 39.777 4.2z"
+    fill="rgb(255, 100, 203)"
+    style={Object {}}
+    transform="translate(-83.443 -144.598)"
+  />
+  <path
+    d="M737.806 730.708c10.905 17.448 32.086 23.88 32.086 23.88s3.501-21.857-7.403-39.306-32.086-23.88-32.086-23.88-3.502 21.857 7.403 39.306z"
+    fill="rgb(255, 100, 203)"
+    style={Object {}}
+    transform="translate(-83.443 -144.598)"
+  />
+</svg>
+`;
+
+exports[`Snapshot Tests for components Snapshot <MobileSkills/> 1`] = `
+<div
+  className="mobileSkills"
+>
+  <h3>
+    Backend
+  </h3>
+  <div>
+    <div>
+      <GrNode />
+       
+      <p>
+        NodeJS
+      </p>
+    </div>
+    <div>
+      <SiDotNet
+        style={
+          Object {
+            "backgroundColor": "#665f82",
+            "color": "white",
+            "padding": "0px 5px",
+          }
+        }
+      />
+       
+      <p>
+        .NetCore
+      </p>
+    </div>
+  </div>
+  <h3>
+    Database
+  </h3>
+  <div>
+    <div>
+      <SiPostgresql />
+       
+      <p>
+        Postgresql
+      </p>
+    </div>
+    <div>
+      <SiMongodb />
+       
+      <p>
+        Mongo
+      </p>
+    </div>
+  </div>
+  <h3>
+    Tests
+  </h3>
+  <div>
+    <div>
+      <SiJest />
+       
+      <p>
+        Jest
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <MobileTabletImage/> 1`] = `
+<div
+  className="container"
+>
+  <div
+    style={
+      Object {
+        "transform": "translateX(200px) translateZ(0)",
+      }
+    }
+  >
+    <div
+      className="parralax"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="cardImageWrapper"
+        data-testid="mobileImageLink"
+        onClick={[Function]}
+      >
+        <img
+          alt="Helsinki Guide"
+          src=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <MyWork/> 1`] = `
+<div
+  className="mainContainer"
+  id="mywork"
+>
+  <div
+    className="containerTitle"
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "opacity": 0,
+        "transform": "scale(0) translateZ(0)",
+      }
+    }
+  >
+    <h2>
+      My
+    </h2>
+    <h2>
+      Work
+    </h2>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="cardContainer"
+      style={
+        Object {
+          "backgroundColor": "#0f73ff",
+          "backgroundImage": "url(\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.5'%3E%3Cpath fill='%23254763' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23285c88' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%232872ae' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%232389d6' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%2312a0ff' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%2333b1ff' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%2344c2ff' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%2350d3ff' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%235ae5ff' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%2361f7ff' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E\\")",
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="itemContainer"
+      >
+        <div
+          className="cardText"
+        >
+          <div>
+            <h2
+              onClick={[Function]}
+            >
+              Helsinki Guide
+            </h2>
+            <h3>
+              City guide with places and activities in Helsinki
+            </h3>
+          </div>
+          <div
+            className="description"
+          />
+          <div
+            className="stackUsed"
+          >
+            <div>
+              React
+            </div>
+            <div>
+              Typescript
+            </div>
+            <div>
+              .Net
+            </div>
+            <div>
+              MSSQL Azure
+            </div>
+          </div>
+        </div>
+        <div
+          className="rightOrder"
+        >
+          <div
+            className="rightOrder"
+          >
+            <div
+              style={Object {}}
+            >
+              <div
+                className="parralax"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseMove={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+              >
+                <div
+                  className="cardImageWrapper"
+                  data-testid="desktopImageLink"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="Helsinki Guide"
+                    id="projectcard"
+                    src="desktop.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="deviceRight"
+      >
+        <div>
+          <svg
+            data-for="mobile"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="tablet"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M800 64H224c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h576c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zm-8 824H232V136h560v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="desktop"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="304"
+              rx="32.14"
+              ry="32.14"
+              strokeLinejoin="round"
+              strokeWidth="32"
+              width="416"
+              x="48"
+              y="96"
+            />
+            <path
+              d="M16 416h480"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="32"
+            />
+          </svg>
+        </div>
+        <div>
+          <svg
+            data-for="githubcode"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+            />
+          </svg>
+          <svg
+            data-for="livepreview"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="cardContainer"
+      style={
+        Object {
+          "backgroundColor": "#C846FB",
+          "backgroundImage": "url(\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%232f2f2f' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23383838' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23414141' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%234a4a4a' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23545454' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%236a6a6a' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23828282' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%239a9a9a' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23b3b3b3' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23cccccc' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E\\")",
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="itemContainer"
+      >
+        <div
+          className="cardText"
+        >
+          <div>
+            <h2
+              onClick={[Function]}
+            >
+              Budget Creator
+            </h2>
+            <h3>
+              Expenses calculation and planning
+            </h3>
+          </div>
+          <div
+            className="description"
+          />
+          <div
+            className="stackUsed"
+          >
+            <div>
+              React
+            </div>
+            <div>
+              Jest
+            </div>
+            <div>
+              Cypress
+            </div>
+          </div>
+        </div>
+        <div
+          className="leftOrder"
+        >
+          <div
+            className="leftOrder"
+          >
+            <div
+              style={Object {}}
+            >
+              <div
+                className="parralax"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseMove={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+              >
+                <div
+                  className="cardImageWrapper"
+                  data-testid="desktopImageLink"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="Budget Creator"
+                    id="projectcard"
+                    src="desktop.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="deviceLeft"
+      >
+        <div>
+          <svg
+            data-for="mobile"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="tablet"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M800 64H224c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h576c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zm-8 824H232V136h560v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="desktop"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="304"
+              rx="32.14"
+              ry="32.14"
+              strokeLinejoin="round"
+              strokeWidth="32"
+              width="416"
+              x="48"
+              y="96"
+            />
+            <path
+              d="M16 416h480"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="32"
+            />
+          </svg>
+        </div>
+        <div>
+          <svg
+            data-for="githubcode"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+            />
+          </svg>
+          <svg
+            data-for="livepreview"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="cardContainer"
+      style={
+        Object {
+          "backgroundColor": "#C846FB",
+          "backgroundImage": "url(\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.5'%3E%3Cpath fill='%23322163' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23412188' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23501eae' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%235f17d6' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%236e00ff' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23961cf5' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23b630eb' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23d142e0' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23e953d6' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23ff64cb' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E\\")",
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="itemContainer"
+      >
+        <div
+          className="cardText"
+        >
+          <div>
+            <h2
+              onClick={[Function]}
+            >
+              eL Dating
+            </h2>
+            <h3>
+              Dating application to connect people
+            </h3>
+          </div>
+          <div
+            className="description"
+          />
+          <div
+            className="stackUsed"
+          >
+            <div>
+              React
+            </div>
+            <div>
+              Node
+            </div>
+            <div>
+              PostgreSQL
+            </div>
+            <div>
+              Pusher
+            </div>
+          </div>
+        </div>
+        <div
+          className="rightOrder"
+        >
+          <div
+            className="rightOrder"
+          >
+            <div
+              style={Object {}}
+            >
+              <div
+                className="parralax"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseMove={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+              >
+                <div
+                  className="cardImageWrapper"
+                  data-testid="desktopImageLink"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="eL Dating"
+                    id="projectcard"
+                    src="desktop.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="deviceRight"
+      >
+        <div>
+          <svg
+            data-for="mobile"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="tablet"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M800 64H224c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h576c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zm-8 824H232V136h560v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="desktop"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="304"
+              rx="32.14"
+              ry="32.14"
+              strokeLinejoin="round"
+              strokeWidth="32"
+              width="416"
+              x="48"
+              y="96"
+            />
+            <path
+              d="M16 416h480"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="32"
+            />
+          </svg>
+        </div>
+        <div>
+          <svg
+            data-for="githubcode"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+            />
+          </svg>
+          <svg
+            data-for="livepreview"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="cardContainer"
+      style={
+        Object {
+          "backgroundColor": "#FFB64F",
+          "backgroundImage": "url(\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%23a93f20' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23b64422' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23c44925' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23d14e27' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23df532a' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23ec7853' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23f79a7c' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23febca6' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23ffddd2' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23ffffff' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E\\")",
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="itemContainer"
+      >
+        <div
+          className="cardText"
+        >
+          <div>
+            <h2
+              onClick={[Function]}
+            >
+              The shoe shop
+            </h2>
+            <h3>
+              Ecommerce platform for shoe sales
+            </h3>
+          </div>
+          <div
+            className="description"
+          />
+          <div
+            className="stackUsed"
+          >
+            <div>
+              React
+            </div>
+            <div>
+              Node
+            </div>
+            <div>
+              Mongo
+            </div>
+          </div>
+        </div>
+        <div
+          className="leftOrder"
+        >
+          <div
+            className="leftOrder"
+          >
+            <div
+              style={Object {}}
+            >
+              <div
+                className="parralax"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseMove={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+              >
+                <div
+                  className="cardImageWrapper"
+                  data-testid="desktopImageLink"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="The shoe shop"
+                    id="projectcard"
+                    src="desktop.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="deviceLeft"
+      >
+        <div>
+          <svg
+            data-for="mobile"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="tablet"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M800 64H224c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h576c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zm-8 824H232V136h560v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="desktop"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="304"
+              rx="32.14"
+              ry="32.14"
+              strokeLinejoin="round"
+              strokeWidth="32"
+              width="416"
+              x="48"
+              y="96"
+            />
+            <path
+              d="M16 416h480"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="32"
+            />
+          </svg>
+        </div>
+        <div>
+          <svg
+            data-for="githubcode"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+            />
+          </svg>
+          <svg
+            data-for="livepreview"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="cardContainer"
+      style={
+        Object {
+          "backgroundColor": "#C846FB",
+          "backgroundImage": "url(\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%23245225' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%232a602b' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23306d32' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23367c38' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%233c8a3f' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%2366a163' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%238cb889' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23b2d0af' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23d8e7d6' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23ffffff' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E\\")",
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="itemContainer"
+      >
+        <div
+          className="cardText"
+        >
+          <div>
+            <h2
+              onClick={[Function]}
+            >
+              Personal Trainer
+            </h2>
+            <h3>
+              App to book and keep schedule of customers
+            </h3>
+          </div>
+          <div
+            className="description"
+          />
+          <div
+            className="stackUsed"
+          >
+            <div>
+              React
+            </div>
+            <div>
+              Material UI
+            </div>
+            <div>
+              AG Grid
+            </div>
+          </div>
+        </div>
+        <div
+          className="rightOrder"
+        >
+          <div
+            className="rightOrder"
+          >
+            <div
+              style={Object {}}
+            >
+              <div
+                className="parralax"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseMove={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+              >
+                <div
+                  className="cardImageWrapper"
+                  data-testid="desktopImageLink"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="Personal Trainer"
+                    id="projectcard"
+                    src="desktop.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="deviceRight"
+      >
+        <div>
+          <svg
+            data-for="mobile"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="tablet"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M800 64H224c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h576c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zm-8 824H232V136h560v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="desktop"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="304"
+              rx="32.14"
+              ry="32.14"
+              strokeLinejoin="round"
+              strokeWidth="32"
+              width="416"
+              x="48"
+              y="96"
+            />
+            <path
+              d="M16 416h480"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="32"
+            />
+          </svg>
+        </div>
+        <div>
+          <svg
+            data-for="githubcode"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+            />
+          </svg>
+          <svg
+            data-for="livepreview"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="cardContainer"
+      style={
+        Object {
+          "backgroundColor": "#56339C",
+          "backgroundImage": "url(\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%234e3763' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%237a4f85' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23a768a7' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23d380c9' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23ff99eb' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23ef7dbe' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23de6192' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23ce4465' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23bd2839' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23ad0c0c' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E\\")",
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="itemContainer"
+      >
+        <div
+          className="cardText"
+        >
+          <div>
+            <h2
+              onClick={[Function]}
+            >
+              Travel Blog
+            </h2>
+            <h3>
+              Blog for travel lovers
+            </h3>
+          </div>
+          <div
+            className="description"
+          />
+          <div
+            className="stackUsed"
+          >
+            <div>
+              React
+            </div>
+            <div>
+              Sass
+            </div>
+            <div>
+              Firebase
+            </div>
+          </div>
+        </div>
+        <div
+          className="leftOrder"
+        >
+          <div
+            className="leftOrder"
+          >
+            <div
+              style={Object {}}
+            >
+              <div
+                className="parralax"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseMove={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+              >
+                <div
+                  className="cardImageWrapper"
+                  data-testid="desktopImageLink"
+                  onClick={[Function]}
+                >
+                  <img
+                    alt="Travel Blog"
+                    id="projectcard"
+                    src="desktop.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="deviceLeft"
+      >
+        <div>
+          <svg
+            data-for="mobile"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="tablet"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "",
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M800 64H224c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h576c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zm-8 824H232V136h560v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+            />
+          </svg>
+          <svg
+            data-for="desktop"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="304"
+              rx="32.14"
+              ry="32.14"
+              strokeLinejoin="round"
+              strokeWidth="32"
+              width="416"
+              x="48"
+              y="96"
+            />
+            <path
+              d="M16 416h480"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="32"
+            />
+          </svg>
+        </div>
+        <div>
+          <svg
+            data-for="githubcode"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+            />
+          </svg>
+          <svg
+            data-for="livepreview"
+            data-tip={true}
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4
+    onClick={[Function]}
+  >
+    More can be found in my github
+  </h4>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <Navigation/> 1`] = `
+<header>
+  <div>
+    <img
+      alt="erkanisuflogo"
+      src="erkologo.png"
+      style={
+        Object {
+          "transform": "translateX(-300px) translateZ(0)",
+        }
+      }
+    />
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a
+          className=""
+          data-testid="myworkhref"
+          href="#mywork"
+          onClick={[Function]}
+        >
+           
+          My work
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          data-testid="myskillshref"
+          href="#myskills"
+          onClick={[Function]}
+        >
+          My skills
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          data-testid="aboutmehref"
+          href="#aboutme"
+          onClick={[Function]}
+        >
+          About Me
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          data-testid="contactmehref"
+          href="#contactme"
+          onClick={[Function]}
+        >
+          Contact me
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`Snapshot Tests for components Snapshot <SelectDevice/> 1`] = `
+<div
+  className="deviceRight"
+>
+  <div>
+    <svg
+      data-for="mobile"
+      data-tip={true}
+      fill="currentColor"
+      height="1em"
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+      viewBox="0 0 1024 1024"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+      />
+    </svg>
+    <svg
+      data-for="tablet"
+      data-tip={true}
+      fill="currentColor"
+      height="1em"
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": "",
+        }
+      }
+      viewBox="0 0 1024 1024"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M800 64H224c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h576c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zm-8 824H232V136h560v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+      />
+    </svg>
+    <svg
+      data-for="desktop"
+      data-tip={true}
+      fill="currentColor"
+      height="1em"
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": "",
+        }
+      }
+      viewBox="0 0 512 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="none"
+        height="304"
+        rx="32.14"
+        ry="32.14"
+        strokeLinejoin="round"
+        strokeWidth="32"
+        width="416"
+        x="48"
+        y="96"
+      />
+      <path
+        d="M16 416h480"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="32"
+      />
+    </svg>
+  </div>
+  <div>
+    <svg
+      data-for="githubcode"
+      data-tip={true}
+      fill="currentColor"
+      height="1em"
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 1024 1024"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+      />
+    </svg>
+    <svg
+      data-for="livepreview"
+      data-tip={true}
+      fill="currentColor"
+      height="1em"
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 1024 1024"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <SocialLinks/> 1`] = `
+<div>
+  <div
+    className=""
+    style={Object {}}
+  >
+    <span
+      data-for="github"
+      data-tip={true}
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        fontSize="18px"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+        />
+      </svg>
+    </span>
+    <span
+      data-for="linkedin"
+      data-tip={true}
+      onClick={[Function]}
+    >
+       
+      <svg
+        fill="currentColor"
+        fontSize="18px"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+        />
+      </svg>
+    </span>
+    <span
+      data-for="gmail"
+      data-tip={true}
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        fontSize="18px"
+        height="1em"
+        role="img"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title />
+        <path
+          d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"
+        />
+      </svg>
+    </span>
+    <span
+      data-for="resume"
+      data-tip={true}
+      onClick={[Function]}
+    >
+       
+      <svg
+        fill="currentColor"
+        fontSize="18px"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M854.6 288.7c6 6 9.4 14.1 9.4 22.6V928c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h424.7c8.5 0 16.7 3.4 22.7 9.4l215.2 215.3zM790.2 326L602 137.8V326h188.2zM633.22 637.26c-15.18-.5-31.32.67-49.65 2.96-24.3-14.99-40.66-35.58-52.28-65.83l1.07-4.38 1.24-5.18c4.3-18.13 6.61-31.36 7.3-44.7.52-10.07-.04-19.36-1.83-27.97-3.3-18.59-16.45-29.46-33.02-30.13-15.45-.63-29.65 8-33.28 21.37-5.91 21.62-2.45 50.07 10.08 98.59-15.96 38.05-37.05 82.66-51.2 107.54-18.89 9.74-33.6 18.6-45.96 28.42-16.3 12.97-26.48 26.3-29.28 40.3-1.36 6.49.69 14.97 5.36 21.92 5.3 7.88 13.28 13 22.85 13.74 24.15 1.87 53.83-23.03 86.6-79.26 3.29-1.1 6.77-2.26 11.02-3.7l11.9-4.02c7.53-2.54 12.99-4.36 18.39-6.11 23.4-7.62 41.1-12.43 57.2-15.17 27.98 14.98 60.32 24.8 82.1 24.8 17.98 0 30.13-9.32 34.52-23.99 3.85-12.88.8-27.82-7.48-36.08-8.56-8.41-24.3-12.43-45.65-13.12zM385.23 765.68v-.36l.13-.34a54.86 54.86 0 0 1 5.6-10.76c4.28-6.58 10.17-13.5 17.47-20.87 3.92-3.95 8-7.8 12.79-12.12 1.07-.96 7.91-7.05 9.19-8.25l11.17-10.4-8.12 12.93c-12.32 19.64-23.46 33.78-33 43-3.51 3.4-6.6 5.9-9.1 7.51a16.43 16.43 0 0 1-2.61 1.42c-.41.17-.77.27-1.13.3a2.2 2.2 0 0 1-1.12-.15 2.07 2.07 0 0 1-1.27-1.91zM511.17 547.4l-2.26 4-1.4-4.38c-3.1-9.83-5.38-24.64-6.01-38-.72-15.2.49-24.32 5.29-24.32 6.74 0 9.83 10.8 10.07 27.05.22 14.28-2.03 29.14-5.7 35.65zm-5.81 58.46l1.53-4.05 2.09 3.8c11.69 21.24 26.86 38.96 43.54 51.31l3.6 2.66-4.39.9c-16.33 3.38-31.54 8.46-52.34 16.85 2.17-.88-21.62 8.86-27.64 11.17l-5.25 2.01 2.8-4.88c12.35-21.5 23.76-47.32 36.05-79.77zm157.62 76.26c-7.86 3.1-24.78.33-54.57-12.39l-7.56-3.22 8.2-.6c23.3-1.73 39.8-.45 49.42 3.07 4.1 1.5 6.83 3.39 8.04 5.55a4.64 4.64 0 0 1-1.36 6.31 6.7 6.7 0 0 1-2.17 1.28z"
+        />
+      </svg>
+    </span>
+    <span
+      data-for="myphone"
+      data-tip={true}
+      onClick={[Function]}
+    >
+       
+      <svg
+        fill="currentColor"
+        fontSize="18px"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"
+        />
+      </svg>
+    </span>
+  </div>
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198 place-left type-dark"
+    data-id="tooltip"
+    id="gmail"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-top {
+        margin-top: -10px;
+    }
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-bottom {
+        margin-top: 10px;
+    }
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-left {
+        margin-left: -10px;
+    }
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-right {
+        margin-left: 10px;
+    }
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t36c5cdcb-ee7e-48d5-85b7-e21c1d9bc198.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      erkanisuf @ gmail.com
+    </p>
+  </div>
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip tbc4ff1d4-6762-45a4-b95d-07e4d8307366 place-left type-dark"
+    data-id="tooltip"
+    id="resume"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.tbc4ff1d4-6762-45a4-b95d-07e4d8307366 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-top {
+        margin-top: -10px;
+    }
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-bottom {
+        margin-top: 10px;
+    }
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-left {
+        margin-left: -10px;
+    }
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-right {
+        margin-left: 10px;
+    }
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tbc4ff1d4-6762-45a4-b95d-07e4d8307366.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      Click to download my CV
+    </p>
+  </div>
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3 place-left type-dark"
+    data-id="tooltip"
+    id="github"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-top {
+        margin-top: -10px;
+    }
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-bottom {
+        margin-top: 10px;
+    }
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-left {
+        margin-left: -10px;
+    }
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-right {
+        margin-left: 10px;
+    }
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tfc8001c7-b1fd-4809-8a7f-ee0bc1418bd3.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+       GitHub profile
+    </p>
+  </div>
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip t9a423382-7ada-4a75-b4fc-5898b5a4b597 place-left type-dark"
+    data-id="tooltip"
+    id="linkedin"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.t9a423382-7ada-4a75-b4fc-5898b5a4b597 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-top {
+        margin-top: -10px;
+    }
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-bottom {
+        margin-top: 10px;
+    }
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-left {
+        margin-left: -10px;
+    }
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-right {
+        margin-left: 10px;
+    }
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t9a423382-7ada-4a75-b4fc-5898b5a4b597.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      Linkedin profile
+    </p>
+  </div>
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7 place-left type-dark"
+    data-id="tooltip"
+    id="myphone"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-top {
+        margin-top: -10px;
+    }
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-bottom {
+        margin-top: 10px;
+    }
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-left {
+        margin-left: -10px;
+    }
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-right {
+        margin-left: 10px;
+    }
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tca9cf8d3-e17a-4112-a5f9-9f3702e8efa7.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p
+      style={
+        Object {
+          "fontSize": "12px",
+          "paddingTop": "15px",
+        }
+      }
+    >
+      +358503040519
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <SocialTooltip/> 1`] = `
+Array [
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip taa2a4e57-f74a-469b-8c00-2ff0bff1efb8 place-left type-dark"
+    data-id="tooltip"
+    id="gmail"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.taa2a4e57-f74a-469b-8c00-2ff0bff1efb8 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-top {
+        margin-top: -10px;
+    }
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-bottom {
+        margin-top: 10px;
+    }
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-left {
+        margin-left: -10px;
+    }
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-right {
+        margin-left: 10px;
+    }
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .taa2a4e57-f74a-469b-8c00-2ff0bff1efb8.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      erkanisuf @ gmail.com
+    </p>
+  </div>,
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip t2e666791-dd01-4e40-899d-76e62058ca1a place-left type-dark"
+    data-id="tooltip"
+    id="resume"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.t2e666791-dd01-4e40-899d-76e62058ca1a {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t2e666791-dd01-4e40-899d-76e62058ca1a.place-top {
+        margin-top: -10px;
+    }
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-bottom {
+        margin-top: 10px;
+    }
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-left {
+        margin-left: -10px;
+    }
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-right {
+        margin-left: 10px;
+    }
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t2e666791-dd01-4e40-899d-76e62058ca1a.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      Click to download my CV
+    </p>
+  </div>,
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip tda33f2b7-e782-4d82-8c6b-69072d7a6711 place-left type-dark"
+    data-id="tooltip"
+    id="github"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.tda33f2b7-e782-4d82-8c6b-69072d7a6711 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-top {
+        margin-top: -10px;
+    }
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-bottom {
+        margin-top: 10px;
+    }
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-left {
+        margin-left: -10px;
+    }
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-right {
+        margin-left: 10px;
+    }
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tda33f2b7-e782-4d82-8c6b-69072d7a6711.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+       GitHub profile
+    </p>
+  </div>,
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip t51031f51-06e5-4f45-a700-fc82abe92a2d place-left type-dark"
+    data-id="tooltip"
+    id="linkedin"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.t51031f51-06e5-4f45-a700-fc82abe92a2d {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t51031f51-06e5-4f45-a700-fc82abe92a2d.place-top {
+        margin-top: -10px;
+    }
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-bottom {
+        margin-top: 10px;
+    }
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-left {
+        margin-left: -10px;
+    }
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-right {
+        margin-left: 10px;
+    }
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t51031f51-06e5-4f45-a700-fc82abe92a2d.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      Linkedin profile
+    </p>
+  </div>,
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip tf1e7f2b5-58ae-4c13-9158-421ecff0a200 place-left type-dark"
+    data-id="tooltip"
+    id="myphone"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.tf1e7f2b5-58ae-4c13-9158-421ecff0a200 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-top {
+        margin-top: -10px;
+    }
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-bottom {
+        margin-top: 10px;
+    }
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-left {
+        margin-left: -10px;
+    }
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-right {
+        margin-left: 10px;
+    }
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tf1e7f2b5-58ae-4c13-9158-421ecff0a200.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p
+      style={
+        Object {
+          "fontSize": "12px",
+          "paddingTop": "15px",
+        }
+      }
+    >
+      +358503040519
+    </p>
+  </div>,
+]
+`;
+
+exports[`Snapshot Tests for components Snapshot <TabletImage/> 1`] = `
+<div
+  className="rightOrder"
+>
+  <div
+    style={Object {}}
+  >
+    <div
+      className="parralax"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="cardImageWrapper"
+        onClick={[Function]}
+      >
+        <img
+          alt="Helsinki Guide"
+          id="projectcard"
+          src=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <Title/> 1`] = `
+<div
+  className="containerTitle"
+  style={
+    Object {
+      "alignItems": "center",
+      "opacity": 0,
+      "transform": "scale(0) translateZ(0)",
+    }
+  }
+>
+  <h2>
+    smalltesttext
+  </h2>
+  <h2>
+    bigtesttext
+  </h2>
+</div>
+`;
+
+exports[`Snapshot Tests for components Snapshot <Tooltip /> 1`] = `
+Array [
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip t54b16b54-e798-4d1d-bc36-674f4aaa4a56 place-top type-dark"
+    data-id="tooltip"
+    id="livepreview"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.t54b16b54-e798-4d1d-bc36-674f4aaa4a56 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-top {
+        margin-top: -10px;
+    }
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-bottom {
+        margin-top: 10px;
+    }
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-left {
+        margin-left: -10px;
+    }
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-right {
+        margin-left: 10px;
+    }
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t54b16b54-e798-4d1d-bc36-674f4aaa4a56.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      Live preview
+    </p>
+  </div>,
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip t7836a506-c21d-4dba-af6d-b8406661c1cd place-top type-dark"
+    data-id="tooltip"
+    id="githubcode"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.t7836a506-c21d-4dba-af6d-b8406661c1cd {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t7836a506-c21d-4dba-af6d-b8406661c1cd.place-top {
+        margin-top: -10px;
+    }
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-bottom {
+        margin-top: 10px;
+    }
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-left {
+        margin-left: -10px;
+    }
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-right {
+        margin-left: 10px;
+    }
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t7836a506-c21d-4dba-af6d-b8406661c1cd.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      Project info and code
+    </p>
+  </div>,
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip t51e265af-a385-4a24-bc09-143184f21ee1 place-bottom type-dark"
+    data-id="tooltip"
+    id="desktop"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.t51e265af-a385-4a24-bc09-143184f21ee1 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t51e265af-a385-4a24-bc09-143184f21ee1.place-top {
+        margin-top: -10px;
+    }
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-bottom {
+        margin-top: 10px;
+    }
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-left {
+        margin-left: -10px;
+    }
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-right {
+        margin-left: 10px;
+    }
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t51e265af-a385-4a24-bc09-143184f21ee1.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      View on desktop
+    </p>
+  </div>,
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip teacc3035-ff7a-42e3-87dc-7af1fb49dc99 place-bottom type-dark"
+    data-id="tooltip"
+    id="mobile"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.teacc3035-ff7a-42e3-87dc-7af1fb49dc99 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-top {
+        margin-top: -10px;
+    }
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-bottom {
+        margin-top: 10px;
+    }
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-left {
+        margin-left: -10px;
+    }
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-right {
+        margin-left: 10px;
+    }
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .teacc3035-ff7a-42e3-87dc-7af1fb49dc99.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      View on Mobile
+    </p>
+  </div>,
+  <div
+    aria-haspopup="true"
+    className="__react_component_tooltip t935ccfcb-d8e0-4cb3-9335-798fc55a6b51 place-bottom type-dark"
+    data-id="tooltip"
+    id="tablet"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+  	.t935ccfcb-d8e0-4cb3-9335-798fc55a6b51 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-top {
+        margin-top: -10px;
+    }
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-bottom {
+        margin-top: 10px;
+    }
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-left {
+        margin-left: -10px;
+    }
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-right {
+        margin-left: 10px;
+    }
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t935ccfcb-d8e0-4cb3-9335-798fc55a6b51.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  ",
+        }
+      }
+    />
+    <p>
+      View on Tablet
+    </p>
+  </div>,
+]
+`;

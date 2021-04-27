@@ -2,14 +2,13 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaHome, FaPhoneAlt } from "react-icons/fa";
 import { openNewTab } from "../Header/SocialLinks";
-
 import FooterCSS from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={FooterCSS.container} id="contactme">
       <div className={FooterCSS.buildTogether}>
         <h1>Interested in collaboration ?</h1>
-        <h2> Leave me a message and lets grab a coffee!</h2>
+        <h2> Leave me a message and lets have a chat!</h2>
       </div>
       <div className={FooterCSS.lightContainer}>
         <div className={FooterCSS.itemsContainer}>

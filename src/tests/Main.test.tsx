@@ -2,12 +2,12 @@ import Enzyme, { shallow } from "enzyme";
 import "react-dom";
 import "@testing-library/jest-dom/extend-expect";
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import { fireEvent, getByText, render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import React from "react";
 import App from "../App";
 import Header from "../components/Header/Header";
 import Navigation from "../components/Header/Navigation";
-import SocialLinks, { openNewTab } from "../components/Header/SocialLinks";
+import SocialLinks from "../components/Header/SocialLinks";
 import BurgerMenu from "../components/BurgerMenu/BurgerMenu";
 import BurgerMenuNav from "../components/BurgerMenu/BurgerMenuNav";
 import AboutMe from "../components/AboutMe/AboutMe";
@@ -15,6 +15,9 @@ import Title from "../components/Title/Title";
 import MyWork from "../components/MyWork/MyWork";
 import Cards from "../components/MyWork/Cards";
 import Footer from "../components/Footer/Footer";
+import GitHubAndLink from "../components/MyWork/GitHubAndLink";
+import DesktopImage from "../components/MyWork/DekstopImage/DesktopImage";
+import MobileTabletImage from "../components/MyWork/MobileTabletImage/MobileTabletImage";
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("Component renders", () => {
@@ -75,6 +78,7 @@ describe("Component renders", () => {
     wrapper.find(`[data-for="github"]`).simulate("click");
     expect(global.open).toBeCalled();
   });
+
   it("mobile test <Burger /> ", () => {
     const wrapper = shallow(<BurgerMenu active={""} activeLink={""} />);
   });
@@ -103,7 +107,7 @@ describe("Component renders", () => {
   });
 
   it("component <AboutMe /> ", () => {
-    // the p tags text
+    // About me <p> tags text
     const text =
       "I am Erko and I am a passionate front-end developer. I love to use new technologies to build amazing products and solve different issues with the help of tech. I enjoy mostly the front end, however I also got experience with back-end technologies. Would love hear from you job opportunities, projects or a volunteer work. Lets create amazing products together!";
     const wrapper = shallow(<AboutMe />);
@@ -138,7 +142,7 @@ describe("Component renders", () => {
     const wrapper = shallow(<MyWork />);
   });
   it("component  <Cards /> ", () => {
-    //fake object
+    //fake object for testing
     const data = {
       title: "Personal Trainer",
       image: "",
@@ -152,24 +156,76 @@ describe("Component renders", () => {
       stack: ["React", "Node", "SQL"],
     };
     const wrapper = shallow(<Cards {...data} oddOrEven={2} />);
-    //htmls texts
+    //Checks for texts content
     expect(wrapper.contains("Personal Trainer")).toEqual(true);
     expect(
       wrapper.contains("App to book and keep schedule of customers")
     ).toEqual(true);
     expect(wrapper.contains("React")).toEqual(true);
+    global.open = jest.fn();
+    wrapper.find("h2").simulate("click");
+    expect(global.open).toBeCalled();
+  });
+
+  it("component <GitHubAndLink/> ", () => {
+    const wrapper = shallow(
+      <GitHubAndLink
+        github={"github.com/erkanisuf"}
+        livepreview={"erkanisuf.netlify.com"}
+      />
+    );
+    //checks github and livepreview , when its clicked on the icons in the cards
+    global.open = jest.fn();
+
+    wrapper.find(`[data-for="githubcode"]`).simulate("click");
+    wrapper.find(`[data-for="livepreview"]`).simulate("click");
+
+    expect(global.open).toBeCalled();
+  });
+
+  it("components <DesktopImage/> and <MobileTabletImage/>  ", () => {
+    const wrapper = shallow(
+      <DesktopImage
+        oddOrEven={2}
+        title={"Test"}
+        livepreview={"travelblog.netlify.com"}
+        image={""}
+      />
+    );
+    //checks if opens newtab to livepreview on img press
+    global.open = jest.fn();
+    wrapper.find(`[data-testid="desktopImageLink"]`).simulate("click");
+    expect(global.open).toBeCalled();
+    const wrapperMobileTablet = shallow(
+      <MobileTabletImage
+        oddOrEven={2}
+        title={"Test"}
+        livepreview={"travelblog.netlify.com"}
+        image={""}
+      />
+    );
+    //checks if opens newtab to livepreview on img press (mobile/tablet vresion)
+    global.open = jest.fn();
+    wrapperMobileTablet
+      .find(`[data-testid="mobileImageLink"]`)
+      .simulate("click");
+    expect(global.open).toBeCalled();
   });
 
   it("component <Footer/> ", () => {
     const wrapper = shallow(<Footer />);
-    // texts
+    // Checks of texts content
     expect(wrapper.contains("Contact Me")).toEqual(true);
     expect(wrapper.contains("+358 50 30 40 519")).toEqual(true);
     expect(wrapper.contains("erkanisuf@gmail.com")).toEqual(true);
     expect(wrapper.contains("Helsinki, Finland")).toEqual(true);
     expect(wrapper.contains("My work")).toEqual(true);
+    expect(wrapper.contains("2021© Erkan Isuf. All rights reserved.")).toEqual(
+      true
+    );
+    expect(wrapper.contains("Created with React.")).toEqual(true);
     const { getByTestId } = render(<Footer />);
-    // Tests of Ahref links if work .
+    // Checks of hrefs
     expect(getByTestId("footermywork")).toHaveAttribute("href", "#mywork");
     expect(getByTestId("footermyskills")).toHaveAttribute("href", "#myskills");
     expect(getByTestId("footeraboutme")).toHaveAttribute("href", "#aboutme");

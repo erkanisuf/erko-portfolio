@@ -3,6 +3,7 @@ import ReactTooltip from "react-tooltip";
 import HeaderCSS from "../Header/Header.module.css";
 
 const SocialTooltip = () => {
+  //This one is for the tooltip on hover for the social links bar
   return (
     <>
       {/* Social Links */}

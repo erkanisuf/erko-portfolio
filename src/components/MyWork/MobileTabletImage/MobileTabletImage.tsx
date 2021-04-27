@@ -26,10 +26,11 @@ const MobileTabletImage: React.FC<IMobileTabletImage> = ({
           trackOnWindow={false}
           transitionSpeed={5000}
           tiltReverse={true}
-          perspective={2000}
+          perspective={1000}
           className={MobileTabletImageCSS.parralax}
         >
           <div
+            data-testid="mobileImageLink"
             className={MobileTabletImageCSS.cardImageWrapper}
             onClick={() => openNewTab(livepreview)}
           >
