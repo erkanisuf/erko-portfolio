@@ -68,6 +68,8 @@
 
 .upperpanel div:nth-of-type(2) .imgDiv img {
   width: 100%;
+  background-color: red;
+  padding: 50px;
 }
 
 .upperpanel p {

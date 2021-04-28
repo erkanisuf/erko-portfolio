@@ -14,7 +14,7 @@ import { GrNode } from "react-icons/gr";
 import MobileSkills from "./MobileSkills";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Tilt from "react-parallax-tilt";
+
 import Title from "../Title/Title";
 const AboutMe = () => {
   const { ref, inView } = useInView({ initialInView: true, delay: 500 }); // checks if social media bar is in view or not
@@ -29,14 +29,19 @@ const AboutMe = () => {
       <div className={AboutMeCSS.upperpanel}>
         <Title smalltext="About" bigtext="Me" alignItems="flex-start" />
         <div>
-          <Tilt>
-            <div className={AboutMeCSS.imgDiv}>
-              <img
-                src="https://images0.westend61.de/0000929638pw/portrait-of-confident-young-businessman-DIGF04093.jpg"
-                alt=""
-              />
-            </div>
-          </Tilt>
+          <motion.div
+            whileHover={{ backgroundColor: "#6e00ff" }}
+            transition={{ duration: 1 }}
+            className={AboutMeCSS.imgDiv}
+          >
+            <motion.img
+              whileHover={{ y: -15, x: 15, scale: 1.1 }}
+              transition={{ duration: 0.5 }}
+              src="https://images0.westend61.de/0000929638pw/portrait-of-confident-young-businessman-DIGF04093.jpg"
+              alt=""
+            />
+          </motion.div>
+
           <motion.p
             id="textaboutme"
             whileHover={{ scale: 1.09 }}
