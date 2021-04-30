@@ -109,7 +109,7 @@ describe("Component renders", () => {
   it("component <AboutMe /> ", () => {
     // About me <p> tags text
     const text =
-      "I am Erko and I am a passionate front-end developer. I love to use new technologies to build amazing products and solve different issues with the help of tech. I enjoy mostly the front end, however I also got experience with back-end technologies. Would love hear from you job opportunities, projects or a volunteer work. Lets create amazing products together!";
+      "I am Erko and I am a passionate front-end developer. I love to use new technologies to build amazing products and solve different issues with the help of tech. I enjoy mostly the front end, however I also got experience with back-end technologies. Would love to hear from you job opportunities or collab projects.";
     const wrapper = shallow(<AboutMe />);
     expect(wrapper.contains(text)).toEqual(true);
     //title text

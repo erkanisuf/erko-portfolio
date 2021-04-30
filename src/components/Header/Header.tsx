@@ -66,7 +66,10 @@ const Header = () => {
         >
           <motion.div variants={container} initial="hidden" animate="show">
             <motion.h1 variants={item}>Erkan Isuf</motion.h1>
-            <motion.h2 variants={item}>Front end developer</motion.h2>
+            <motion.h2 variants={item}>
+              Front end developer
+              <span>Junior</span>
+            </motion.h2>
 
             <motion.button
               data-testid="btnletstalk"

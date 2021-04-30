@@ -127,6 +127,13 @@ $pinkViolet: rgb(255, 100, 203);
       color: white;
       display: block;
       font-family: "Ubuntu", sans-serif;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 0.7vw;
+        font-weight: 300;
+      }
     }
     button {
       border-top-right-radius: 167px;
@@ -162,6 +169,15 @@ $pinkViolet: rgb(255, 100, 203);
       h2 {
         font-size: 5vw;
         width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 2vw;
+          font-weight: 300;
+
+          width: 15px;
+        }
       }
       button {
         border-radius: 167px;

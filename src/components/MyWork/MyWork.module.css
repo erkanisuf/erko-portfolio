@@ -66,10 +66,13 @@
   margin: 25px auto;
 }
 
+.upperpanel div:nth-of-type(2) .imgDiv {
+  background-color: #221e41;
+  padding: 0px 0px 5px 5px;
+}
+
 .upperpanel div:nth-of-type(2) .imgDiv img {
   width: 100%;
-  background-color: red;
-  padding: 50px;
 }
 
 .upperpanel p {

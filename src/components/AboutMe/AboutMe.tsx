@@ -14,6 +14,7 @@ import { GrNode } from "react-icons/gr";
 import MobileSkills from "./MobileSkills";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import myprofile from "../../staticImages/myprofile.jpg";
 
 import Title from "../Title/Title";
 const AboutMe = () => {
@@ -35,9 +36,9 @@ const AboutMe = () => {
             className={AboutMeCSS.imgDiv}
           >
             <motion.img
-              whileHover={{ y: -15, x: 15, scale: 1.1 }}
+              whileHover={{ y: -15, x: 15, scale: 1.3 }}
               transition={{ duration: 0.5 }}
-              src="https://images0.westend61.de/0000929638pw/portrait-of-confident-young-businessman-DIGF04093.jpg"
+              src={myprofile}
               alt=""
             />
           </motion.div>
@@ -50,12 +51,12 @@ const AboutMe = () => {
             animate={inView ? "active" : "inactive"}
             transition={{ duration: 0.5 }}
           >
-            I am Erko and I am a passionate front-end developer. I love to use
-            new technologies to build amazing products and solve different
-            issues with the help of tech. I enjoy mostly the front end, however
-            I also got experience with back-end technologies. Would love hear
-            from you job opportunities, projects or a volunteer work. Lets
-            create amazing products together!
+            <img src={myprofile} className={AboutMeCSS.mobileImg} alt="" />I am
+            Erko and I am a passionate front-end developer. I love to use new
+            technologies to build amazing products and solve different issues
+            with the help of tech. I enjoy mostly the front end, however I also
+            got experience with back-end technologies. Would love to hear from
+            you job opportunities or collab projects.
           </motion.p>
         </div>
       </div>

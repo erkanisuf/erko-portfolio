@@ -29,7 +29,7 @@ exports[`Snapshot Tests for components Snapshot <AboutMe/> 1`] = `
       >
         <ForwardRef(MotionComponent)
           alt=""
-          src="https://images0.westend61.de/0000929638pw/portrait-of-confident-young-businessman-DIGF04093.jpg"
+          src="myprofile.jpg"
           transition={
             Object {
               "duration": 0.5,
@@ -37,7 +37,7 @@ exports[`Snapshot Tests for components Snapshot <AboutMe/> 1`] = `
           }
           whileHover={
             Object {
-              "scale": 1.1,
+              "scale": 1.3,
               "x": 15,
               "y": -15,
             }
@@ -73,7 +73,12 @@ exports[`Snapshot Tests for components Snapshot <AboutMe/> 1`] = `
           }
         }
       >
-        I am Erko and I am a passionate front-end developer. I love to use new technologies to build amazing products and solve different issues with the help of tech. I enjoy mostly the front end, however I also got experience with back-end technologies. Would love hear from you job opportunities, projects or a volunteer work. Lets create amazing products together!
+        <img
+          alt=""
+          className="mobileImg"
+          src="myprofile.jpg"
+        />
+        I am Erko and I am a passionate front-end developer. I love to use new technologies to build amazing products and solve different issues with the help of tech. I enjoy mostly the front end, however I also got experience with back-end technologies. Would love to hear from you job opportunities or collab projects.
       </ForwardRef(MotionComponent)>
     </div>
   </div>
@@ -921,6 +926,9 @@ exports[`Snapshot Tests for components Snapshot <Header/> 1`] = `
           }
         >
           Front end developer
+          <span>
+            Junior
+          </span>
         </ForwardRef(MotionComponent)>
         <ForwardRef(MotionComponent)
           data-testid="btnletstalk"

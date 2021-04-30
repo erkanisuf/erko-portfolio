@@ -42,10 +42,14 @@ $darkViolet: #221e41;
 
       margin: 25px auto;
       .imgDiv {
-        background-color: $darkViolet;
+        display: flex;
+        align-items: flex-start;
         padding: 0px 0px 5px 5px;
+
         img {
           width: 100%;
+          max-height: 180px;
+          object-fit: contain;
         }
       }
     }
@@ -85,6 +89,12 @@ $darkViolet: #221e41;
     padding: 50px 0px;
     div {
       flex-direction: column;
+      .imgDiv {
+        display: none;
+        img {
+          display: none;
+        }
+      }
     }
     p {
       font-size: 3vw;
@@ -97,12 +107,18 @@ $darkViolet: #221e41;
     width: 75%;
     div {
       flex-direction: column;
+      .imgDiv {
+        display: none;
+        img {
+          display: none;
+        }
+      }
     }
     p {
       font-size: 4vw;
       border: none;
       margin: 0 auto;
-      padding: 25px 0px;
+      padding: 25px 0px 0px 15px;
       &:before {
         display: none;
       }
@@ -110,6 +126,22 @@ $darkViolet: #221e41;
   }
 }
 
+.mobileImg {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+    max-height: 150px;
+  }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    display: block;
+    float: left;
+    margin-top: 55px;
+    margin-right: 25px;
+  }
+}
 //Bottom panel for Skills section
 .bottompanel {
   display: flex;
