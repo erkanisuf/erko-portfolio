@@ -39,7 +39,7 @@ const AboutMe = () => {
               whileHover={{ y: -15, x: 15, scale: 1.3 }}
               transition={{ duration: 0.5 }}
               src={myprofile}
-              alt=""
+              alt="erkanisuf"
             />
           </motion.div>
 
@@ -51,7 +51,7 @@ const AboutMe = () => {
             animate={inView ? "active" : "inactive"}
             transition={{ duration: 0.5 }}
           >
-            <img src={myprofile} className={AboutMeCSS.mobileImg} alt="" />I am
+            <img src={myprofile} className={AboutMeCSS.mobileImg} alt="erkanisuf" />I am
             Erko and I am a passionate front-end developer. I love to use new
             technologies to build amazing products and solve different issues
             with the help of tech. I enjoy mostly the front end, however I also
