@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer className={FooterCSS.container} id="contactme">
       <div className={FooterCSS.buildTogether}>
-        <h1>Interested in collaboration ?</h1>
-        <h2> Leave me a message and lets have a chat!</h2>
+        <h1>Interested in collaboration?</h1>
+        <h2> Leave me a message and let`s have a chat!</h2>
       </div>
       <div className={FooterCSS.lightContainer}>
         <div className={FooterCSS.itemsContainer}>
